@@ -14,3 +14,10 @@ run = """
   sudo ./lucidglyph/lucidglyph.sh install
   rm -rf ./lucidglyph
 """
+
+[tasks.fonts]
+run = """
+  git clone https://github.com/maximilionus/lucidglyph.git
+  sudo ./lucidglyph/lucidglyph.sh install
+  rm -rf ./lucidglyph
+"""
