@@ -6,4 +6,4 @@ ruby = "latest"
 
 [bootstrap.packages]
 "dnf:papirus-icon-theme" = "latest"
-"flatpak:com.brave.Browser  "
+"flatpak:com.brave.Browser" = "latest"
