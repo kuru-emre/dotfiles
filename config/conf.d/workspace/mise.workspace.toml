@@ -12,6 +12,6 @@ ruby = "latest"
 run = """
   git clone https://github.com/maximilionus/lucidglyph.git
   cd lucidglyph
-  sudo ./lucidglyph.sh install
-  rm -rf ./lucidglyph
+  sudo ./lucidglyph.sh install & rm -rf ./lucidglyph
+
 """
