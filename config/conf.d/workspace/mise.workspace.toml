@@ -11,6 +11,6 @@ ruby = "latest"
 [bootstrap.hooks.post-packages]
 run = """
   git clone https://github.com/maximilionus/lucidglyph.git
-  sudo ./lucidglyph/lucidglyph.sh install &
+  sudo ./lucidglyph/lucidglyph.sh install
   rm -rf ./lucidglyph
 """
