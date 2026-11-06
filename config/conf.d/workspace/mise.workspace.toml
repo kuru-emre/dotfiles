@@ -16,4 +16,4 @@ run = """
 """
 
 [bootstrap.hooks.post-packages]
-run = [{ task = "fonts" }]
+run_tasks = [{ task = "fonts" }]
