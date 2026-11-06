@@ -42,7 +42,7 @@ port = 443
 protocol = "tcp"
 
 [[bootstrap.linux.firewall.rules]]
-name = "ssh-admin"
+name = "ssh"
 port = 22
 protocol = "tcp"
 interface = "wt0"
