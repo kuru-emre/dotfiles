@@ -49,7 +49,6 @@ default_outgoing = "allow"
 name = "https"
 port = 443
 protocol = "tcp"
-source = "127.0.0.1"
 
 [[bootstrap.linux.firewall.rules]]
 name = "ssh"
