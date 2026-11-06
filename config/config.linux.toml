@@ -45,4 +45,3 @@ protocol = "tcp"
 name = "ssh-admin"
 port = 22
 protocol = "tcp"
-action = "limit"
