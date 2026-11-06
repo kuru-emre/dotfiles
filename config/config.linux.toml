@@ -32,7 +32,7 @@ run = """
 run = 'sudo usermod -aG docker "$(id -un)"'
 
 [bootstrap.linux.firewall]
-backend = "ufw"
+backend = "firewalld"
 default_incoming = "deny"
 default_outgoing = "allow"
 
