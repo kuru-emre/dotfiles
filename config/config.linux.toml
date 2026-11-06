@@ -31,12 +31,6 @@ run = """
 [bootstrap.hooks.post-packages]
 run = 'sudo usermod -aG docker "$(id -un)"'
 
-[bootstrap.files."/etc/yum.repos.d/netbird.repo"]
-source = "./files/example.conf"
-owner = "root"
-group = "root"
-mode = "0644"
-
 [bootstrap.services.firewalld]
 state = "stopped"
 enabled = false
