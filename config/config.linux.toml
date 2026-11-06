@@ -43,7 +43,7 @@ enabled = true
 [bootstrap.linux.firewall]
 backend = "nftables"
 default_incoming = "deny"
-default_outgoing = "allow"
+default_outgoing = "deny"
 
 [[bootstrap.linux.firewall.rules]]
 name = "https"
