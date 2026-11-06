@@ -9,6 +9,4 @@ ruby = "latest"
 "flatpak:com.brave.Browser" = "latest"
 
 [bootstrap.hooks.post-packages]
-run = '[bootstrap.hooks.post-packages]
-run = git clone https://github.com/maximilionus/lucidglyph.git && cd lucidglyph && sudo ./lucidglyph.sh install && cd .. && rm -rf ./lucidglyph
-'
+run = ''
