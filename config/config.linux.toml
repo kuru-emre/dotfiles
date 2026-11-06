@@ -2,6 +2,7 @@
 java = "lts"
 python = "latest"
 usage = "latest"
+starship = "latest"
 
 [bootstrap.user]
 login_shell = "zsh"
