@@ -1,2 +1,8 @@
 [dotfiles]
 "~/.ssh/config" = "ssh_config"
+
+[bootstrap.files."/etc/yum.repos.d/netbird.repo"]
+source = "./files/example.conf"
+owner = "root"
+group = "root"
+mode = "0644"
