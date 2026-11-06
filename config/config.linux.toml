@@ -36,6 +36,10 @@ state = "stopped"
 enabled = false
 masked = true
 
+[bootstrap.services.nftables]
+state = "running"
+enabled = true
+
 [bootstrap.linux.firewall]
 backend = "nftables"
 default_incoming = "deny"
