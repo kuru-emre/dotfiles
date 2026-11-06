@@ -1,5 +1,5 @@
 [settings.system_packages]
-elevate_with = "sudo"
+sudo = true
 
 [tools]
 java = "lts"
