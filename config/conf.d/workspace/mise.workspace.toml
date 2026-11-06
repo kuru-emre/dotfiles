@@ -9,7 +9,7 @@ ruby = "latest"
 "flatpak:com.brave.Browser" = "latest"
 
 [bootstrap.hooks.post-packages]
-task
+run = { task = "db-migrate" }
 
 [tasks.fonts]
 run = """
