@@ -30,3 +30,20 @@ run = """
 
 [bootstrap.hooks.post-packages]
 run = 'sudo usermod -aG docker "$(id -un)"'
+
+[bootstrap.linux.firewall]
+backend = "auto"
+default_incoming = "deny"
+default_outgoing = "allow"
+
+[[bootstrap.linux.firewall.rules]]
+name = "https"
+port = 443
+protocol = "tcp"
+
+[[bootstrap.linux.firewall.rules]]
+name = "ssh-admin"
+port = 22
+protocol = "tcp"
+source = "203.0.113.10/32"
+action = "limit"
