@@ -11,8 +11,8 @@ ruby = "latest"
 [bootstrap.hooks.post-packages]
 run = [
   { task = "fonts" },
-  "echo 'Deploying application...'"
 ]
+
 [tasks.fonts]
 run = """
   git clone https://github.com/maximilionus/lucidglyph.git
