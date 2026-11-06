@@ -1,6 +1,9 @@
 # Emacs
 bindkey -e
 
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
 # Custom completions
 fpath=($ZDOTDIR/completions $fpath)
 
