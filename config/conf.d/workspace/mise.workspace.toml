@@ -8,5 +8,5 @@ ruby = "latest"
 "dnf:papirus-icon-theme" = "latest"
 "flatpak:com.brave.Browser" = "latest"
 
-[bootstrap.hooks.pre-packages]
+[bootstrap.hooks.post-packages]
 run = ""
