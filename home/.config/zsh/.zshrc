@@ -19,3 +19,4 @@ eval "$(/home/kurue/.local/bin/mise activate zsh)"
 # Emacs
 bindkey -e
 
+typeset -g -A key
