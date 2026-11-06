@@ -26,6 +26,7 @@ login_shell = "/usr/bin/zsh"
 "dnf:docker" = "latest"
 
 [dotfiles]
+"~/.config/git" = { mode = "track" }
 "~/.config/mise" = { mode = "track" }
 "~/.config/nvim" = { mode = "track" }
 "~/.config/starship" = { mode = "track" }
