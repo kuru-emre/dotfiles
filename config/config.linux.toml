@@ -31,6 +31,11 @@ run = """
 [bootstrap.hooks.post-packages]
 run = 'sudo usermod -aG docker "$(id -un)"'
 
+[bootstrap.services.firewalld]
+state = "stopped"
+enabled = false
+masked = true
+
 [bootstrap.linux.firewall]
 backend = "nftables"
 default_incoming = "deny"
