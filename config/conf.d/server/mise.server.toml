@@ -1,0 +1,10 @@
+[tasks.bootstrap]
+run = """
+  # Homelab static IPs blocks
+  HOSTS_APPEND="{{config_root}}/hosts"
+  if [ -f "$HOSTS_APPEND" ] && ! grep -q "Homelab Dynamic Hosts Block" /etc/hosts; then
+      echo "Injecting Homelab static IPs into /etc/hosts..."
+      echo "" | sudo tee -a /etc/hosts > /dev/null
+      cat "$HOSTS_APPEND" | sudo tee -a /etc/hosts > /dev/null
+  fi
+"""

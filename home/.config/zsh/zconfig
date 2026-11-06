@@ -1,0 +1,20 @@
+# Core tools
+zmodule environment
+zmodule fzf
+zmodule exa
+
+# Completions
+zmodule zsh-users/zsh-completions --fpath src
+zmodule Aloxaf/fzf-tab
+
+# Enhancements (ZLE)
+zmodule zdharma-continuum/fast-syntax-highlighting
+zmodule zsh-users/zsh-autosuggestions
+
+# Integrations
+zmodule kiesman99/zim-zoxide
+zmodule joke/zim-mise
+
+# Prompt-related
+zmodule olets/zsh-transient-prompt --source transient-prompt.zsh-theme
+zmodule joke/zim-starship

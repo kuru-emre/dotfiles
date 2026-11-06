@@ -1,14 +1,31 @@
+[settings]
+trusted_config_paths = ["~"]
+
 [tools]
+android-sdk = "latest"
 bun = "latest"
-java = "latest"
+java = "lts"
 node = "latest"
 python = "latest"
 ruby = "latest"
+rust = "latest"
 
 [bootstrap.services.mise-history]
 builtin = "history-watch"
 
+[bootstrap.mise_shell_activate]
+zsh = true
+
+[bootstrap.user]
+login_shell = "/usr/bin/zsh"
+
+[bootstrap.packages]
+"dnf:git" = "latest"
+"dnf:nvim" = "latest"
+"dnf:zsh" = "latest"
+"dnf:docker" = "latest"
+
 [dotfiles]
-"~/.config/mise/config.toml" = { mode = "track" }
+"~/.config/mise" = { mode = "track" }
 "~/.config/nvim" = { mode = "track" }
-"~/.zshenv" = { mode = "track" }
+"~/.config/zsh" = { mode = "track" }

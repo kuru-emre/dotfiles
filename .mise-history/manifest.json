@@ -2,7 +2,7 @@
   "format": 1,
   "enrollment": [
     {
-      "path": "config/config.toml",
+      "path": "config",
       "autosave": true,
       "encrypt": false,
       "variants": []
@@ -14,7 +14,7 @@
       "variants": []
     },
     {
-      "path": "home/.zshenv",
+      "path": "home/.config/zsh",
       "autosave": true,
       "encrypt": false,
       "variants": []
