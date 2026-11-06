@@ -9,7 +9,7 @@ ruby = "latest"
 "flatpak:com.brave.Browser" = "latest"
 
 [bootstrap.hooks.post-packages]
-depends = ["fonts"]
+run = [{ task = "db-migrate" }, "echo 'Deploying application...'"]
 
 [tasks.fonts]
 run = """
