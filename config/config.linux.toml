@@ -1,3 +1,6 @@
+[settings.system_packages]
+elevate_with = "sudo"
+
 [tools]
 java = "lts"
 python = "latest"
