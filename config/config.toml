@@ -28,4 +28,5 @@ login_shell = "/usr/bin/zsh"
 [dotfiles]
 "~/.config/mise" = { mode = "track" }
 "~/.config/nvim" = { mode = "track" }
+"~/.config/starship" = { mode = "track" }
 "~/.config/zsh" = { mode = "track" }
