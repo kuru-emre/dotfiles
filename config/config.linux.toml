@@ -45,4 +45,4 @@ protocol = "tcp"
 name = "ssh-admin"
 port = 22
 action = "allow"
-interface = "
+interface = "wt0"
