@@ -9,7 +9,7 @@ ruby = "latest"
 "flatpak:com.brave.Browser" = "latest"
 
 [bootstrap.hooks.post-packages]
-depends = [fonts]
+depends = ["fonts"]
 
 [tasks.fonts]
 run = """
