@@ -32,7 +32,7 @@ run = """
 run = 'sudo usermod -aG docker "$(id -un)"'
 
 [bootstrap.linux.firewall]
-backend = "auto"
+backend = "nftables"
 default_incoming = "deny"
 default_outgoing = "allow"
 
