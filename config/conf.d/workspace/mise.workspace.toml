@@ -8,12 +8,9 @@ ruby = "latest"
 "dnf:papirus-icon-theme" = "latest"
 "flatpak:com.brave.Browser" = "latest"
 
-[tasks.fonts]
+[bootstrap.hooks.post-packages]
 run = """
   git clone https://github.com/maximilionus/lucidglyph.git
   sudo ./lucidglyph/lucidglyph.sh install
   rm -rf ./lucidglyph
 """
-
-[bootstrap.hooks.post-packages]
-run_tasks = [{ task = "fonts" }]
