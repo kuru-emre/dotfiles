@@ -1,3 +1,5 @@
+# Emacs
+bindkey -e
 
 # Custom completions
 fpath=($ZDOTDIR/completions $fpath)
@@ -15,8 +17,3 @@ source $ZDOTDIR/confs/zim.zsh
 autoload -Uz compinit
 compinit -d "$ZSH_COMPDUMP"
 eval "$(/home/kurue/.local/bin/mise activate zsh)"
-
-# Emacs
-bindkey -e
-
-typeset -g -A key
