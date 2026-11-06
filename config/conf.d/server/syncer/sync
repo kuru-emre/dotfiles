@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+SOURCE="/srv/data/"
+DEST="/srv/replica/"
+
+exec 9>/run/lock/srv-sync.lock
+flock -n 9 || exit 0
+
+mountpoint -q "$SOURCE" || {
+    echo "ERROR: Source partition not mounted"
+    exit 1
+}
+
+mountpoint -q "$DEST" || {
+    echo "ERROR: Replica disk not mounted"
+    exit 1
+}
+
+rsync -aHAXx --numeric-ids \
+    --delete-delay \
+    --info=stats2 \
+    "$SOURCE" "$DEST"

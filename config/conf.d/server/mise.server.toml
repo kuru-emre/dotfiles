@@ -1,10 +1,35 @@
-[tasks.bootstrap]
-run = """
-  # Homelab static IPs blocks
-  HOSTS_APPEND="{{config_root}}/hosts"
-  if [ -f "$HOSTS_APPEND" ] && ! grep -q "Homelab Dynamic Hosts Block" /etc/hosts; then
-      echo "Injecting Homelab static IPs into /etc/hosts..."
-      echo "" | sudo tee -a /etc/hosts > /dev/null
-      cat "$HOSTS_APPEND" | sudo tee -a /etc/hosts > /dev/null
-  fi
-"""
+[bootstrap.files."/etc/hosts"]
+source = "./hosts"
+owner = "root"
+group = "root"
+mode = "0644"
+
+[bootstrap.files."/usr/local/bin/srv-sync"]
+source = "./syncer/sync"
+owner = "root"
+group = "root"
+mode = "0755"
+
+[bootstrap.compose.caddy]
+pull = "always"
+project_dir = "/srv/apps/caddy"
+
+[bootstrap.compose.immich]
+pull = "always"
+project_dir = "/srv/apps/immich"
+
+[bootstrap.compose.arcane]
+pull = "always"
+project_dir = "/srv/apps/arcane"
+
+[bootstrap.compose.filebrowser]
+pull = "always"
+project_dir = "/srv/apps/filebrowser"
+
+[bootstrap.compose.pangolin]
+pull = "always"
+project_dir = "/srv/apps/pangolin"
+
+[bootstrap.compose.vaultwarden]
+pull = "always"
+project_dir = "/srv/apps/vaultwarden"

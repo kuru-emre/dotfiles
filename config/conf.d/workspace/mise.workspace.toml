@@ -1,0 +1,6 @@
+[tools]
+android-sdk = "latest"
+bun = "latest"
+node = "latest"
+ruby = "latest"
+
