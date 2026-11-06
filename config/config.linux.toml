@@ -1,6 +1,3 @@
-[settings.system_packages]
-sudo = true
-
 [tools]
 java = "lts"
 python = "latest"
@@ -22,16 +19,13 @@ state = "present"
 "dnf:docker" = "latest"
 
 [bootstrap.hooks.pre-packages]
-sudo = true
 run = """
-  dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-  dnf config-manager setopt fedora-cisco-openh264.enabled=1
-  dnf update @core
-  dnf install rpmfusion-*-appstream-data
-  dnf swap ffmpeg-free ffmpeg --allowerasing
-  dnf install intel-media-driver
+  sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+  sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
+  sudo dnf update @core
+  sudo dnf install rpmfusion-*-appstream-data
+  sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 """
 
 [bootstrap.hooks.post-packages]
-sudo = true
-run = 'usermod -aG docker "$(id -un)"'
+run = 'sudo usermod -aG docker "$(id -un)"'
