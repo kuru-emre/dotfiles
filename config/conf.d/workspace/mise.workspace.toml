@@ -9,10 +9,8 @@ ruby = "latest"
 "flatpak:com.brave.Browser" = "latest"
 
 [bootstrap.hooks.post-packages]
-run = [
-  { task = "db-migrate" },
-  "echo 'Deploying application...'"
-]
+run = [{ task = "fonts" }, "echo 'Deploying application...'"]
+
 [tasks.fonts]
 run = """
   git clone https://github.com/maximilionus/lucidglyph.git
