@@ -1,2 +1,2 @@
 auto_env = true
-env = ["workspace", "server"]
+env = ["workspace", "server", "ssh", "biometrics"]
