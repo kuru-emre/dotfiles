@@ -6,4 +6,4 @@ gaze = { copr = "gundulabs/gaze" }
 "dnf:gaze-kde" = "latest"
 
 [bootstrap.hooks.post-packages]
-run = ["sudo pam-config --add --gaze", "sudo pam-config --update", "sudo gaze-kde-pam enable", ""]
+run = ["sudo pam-config --add --gaze", "sudo pam-config --update", "sudo gaze-kde-pam enable", "sudo gaze-kde-pam enable-login"]
