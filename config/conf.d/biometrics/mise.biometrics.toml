@@ -3,6 +3,7 @@ gaze = { copr = "gundulabs/gaze" }
 
 [bootstrap.packages]
 "dnf:gaze" = "latest"
+"dnf:gaze-kde" = "latest"
 
 [bootstrap.hooks.post-packages]
 run = ["sudo pam-config --add --gaze", "sudo pam-config --update"]
