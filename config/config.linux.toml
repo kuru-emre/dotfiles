@@ -18,8 +18,8 @@ state = "present"
 
 [bootstrap.users.kurue]
 state = "present"
-group = "mise-cache"
-groups = ["container-readers"]
+group = "kurue"
+groups = ["docker", "wheel"]
 home = "/var/lib/mise-cache"
 shell = "/usr/sbin/nologin"
 comment = "mise cache service"
