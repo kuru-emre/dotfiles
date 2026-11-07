@@ -3,7 +3,6 @@
 
 [bootstrap.files."/etc/yum.repos.d/netbird.repo"]
 state = "present"
-
 source = "./netbird.repo"
 owner = "root"
 group = "root"
