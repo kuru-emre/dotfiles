@@ -18,6 +18,7 @@ state = "present"
 
 [bootstrap.users.kurue]
 state = "present"
+uid = 1000
 group = "kurue"
 groups = ["docker", "wheel"]
 home = "/home/kurue"
