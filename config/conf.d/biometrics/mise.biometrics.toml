@@ -5,6 +5,12 @@ gaze = { copr = "gundulabs/gaze" }
 "dnf:gaze" = "latest"
 "dnf:gaze-kde" = "latest"
 
+[bootstrap.files."/etc/yum.repos.d/gaze.repo"]
+source = "./gaze.repo"
+owner = "root"
+group = "root"
+mode = "0644"
+
 [bootstrap.hooks.pre-packages]
 run = "sudo rpm --import https://packages.gundulabs.com/keys/gundulabs-repo.asc"
 
