@@ -12,4 +12,4 @@ mode = "0644"
 run = "sudo rpm --import https://packages.gundulabs.com/keys/gundulabs-repo.asc"
 
 [bootstrap.hooks.post-packages]
-run = ["sudo pam-config --add --gaze", "sudo pam-config --update", "sudo gaze-kde-pam enable", "sudo gaze-kde-pam enable-login"]
+run = ["sudo authselect select gaze with-silent-lastlog --force", "sudo gaze-kde-pam enable", "sudo gaze-kde-pam enable-login"]
