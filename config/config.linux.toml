@@ -16,6 +16,15 @@ state = "present"
 [bootstrap.groups.docker]
 state = "present"
 
+[bootstrap.users.kurue]
+system = true
+group = "mise-cache"
+groups = ["container-readers"]
+home = "/var/lib/mise-cache"
+shell = "/usr/sbin/nologin"
+comment = "mise cache service"
+create_home = true
+
 [bootstrap.packages]
 "dnf:git" = "latest"
 "dnf:nvim" = "latest"
