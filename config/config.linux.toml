@@ -17,7 +17,7 @@ state = "present"
 state = "present"
 
 [bootstrap.users.kurue]
-system = true
+state = "present"
 group = "mise-cache"
 groups = ["container-readers"]
 home = "/var/lib/mise-cache"
