@@ -1,5 +1,0 @@
-[bootstrap.files."/etc/yum.repos.d/gaze.repo"]
-source = "./gaze.repo"
-owner = "root"
-group = "root"
-mode = "0644"
