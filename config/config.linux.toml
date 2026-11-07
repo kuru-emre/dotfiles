@@ -10,6 +10,9 @@ login_shell = "zsh"
 [bootstrap.mise_shell_activate]
 zsh = true
 
+[bootstrap.groups.kurue]
+state = "present"
+
 [bootstrap.groups.docker]
 state = "present"
 
