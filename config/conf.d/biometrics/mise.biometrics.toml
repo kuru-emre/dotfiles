@@ -1,6 +1,3 @@
-[bootstrap.dnf.repos]
-gaze = { copr = "gundulabs/gaze" }
-
 [bootstrap.packages]
 "dnf:gaze" = "latest"
 "dnf:gaze-kde" = "latest"
