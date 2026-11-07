@@ -6,7 +6,6 @@ source = "./netbird.repo"
 owner = "root"
 group = "root"
 mode = "0644"
-phase = "pre-packages"
 
 [dotfiles]
 "~/.ssh/config" = "ssh_config"
