@@ -7,7 +7,6 @@ source = "./gaze.repo"
 owner = "root"
 group = "root"
 mode = "0644"
-phase = "pre-packages"
 
 [bootstrap.hooks.pre-packages]
 run = "sudo rpm --import https://packages.gundulabs.com/keys/gundulabs-repo.asc"
