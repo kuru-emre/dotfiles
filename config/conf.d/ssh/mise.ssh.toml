@@ -1,5 +1,5 @@
-[dotfiles]
-"~/.ssh/config" = "ssh_config"
+[bootstrap.packages]
+"dnf:netbird" = "latest"
 
 [bootstrap.files."/etc/yum.repos.d/netbird.repo"]
 source = "./netbird.repo"
@@ -9,3 +9,6 @@ mode = "0644"
 
 [bootstrap.hooks.pre-packages]
 run = "sudo dnf config-manager addrepo --from-repofile=/etc/yum.repos.d/netbird.repo"
+
+[dotfiles]
+"~/.ssh/config" = "ssh_config"
