@@ -38,9 +38,6 @@ run = """
   sudo dnf install intel-media-driver
 """
 
-[bootstrap.hooks.post-packages]
-run = 'sudo usermod -aG docker "$(id -un)"'
-
 [bootstrap.services.firewalld]
 state = "stopped"
 enabled = false
