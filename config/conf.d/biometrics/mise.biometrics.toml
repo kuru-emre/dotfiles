@@ -1,2 +1,2 @@
 [bootstrap.dnf.repos]
-ghostty = { copr = "scottames/ghostty" }
+ghostty = { copr = "gundulabs/gaze" }
