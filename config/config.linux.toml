@@ -21,6 +21,7 @@ state = "present"
 group = "kurue"
 groups = ["docker", "wheel"]
 home = "/home/kurue"
+comment = "Kurue"
 
 [bootstrap.packages]
 "dnf:git" = "latest"
