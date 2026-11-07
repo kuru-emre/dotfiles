@@ -8,8 +8,5 @@ group = "root"
 mode = "0644"
 phase = "pre-packages"
 
-[bootstrap.hooks.pre-packages]
-run = "sudo dnf config-manager addrepo --from-repofile=/etc/yum.repos.d/netbird.repo"
-
 [dotfiles]
 "~/.ssh/config" = "ssh_config"
