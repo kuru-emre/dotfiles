@@ -10,7 +10,6 @@ ruby = "latest"
 
 [bootstrap.hooks.post-packages]
 run = """
-  curl -fsSL https://gaze.gundulabs.com/install.sh | sh
   git clone https://github.com/maximilionus/lucidglyph.git
   sudo ./lucidglyph/lucidglyph.sh install
   rm -rf ./lucidglyph
