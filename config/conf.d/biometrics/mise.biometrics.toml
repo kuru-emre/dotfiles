@@ -1,2 +1,5 @@
 [bootstrap.dnf.repos]
 ghostty = { copr = "gundulabs/gaze" }
+
+[bootstrap.packages]
+"dnf:netbird" = "latest"
