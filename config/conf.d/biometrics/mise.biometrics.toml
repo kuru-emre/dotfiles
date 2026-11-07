@@ -3,3 +3,6 @@ ghostty = { copr = "gundulabs/gaze" }
 
 [bootstrap.packages]
 "dnf:gaze" = "latest"
+
+[bootstrap.hooks.post-packages]
+run = "sudo pam-config --add --gaze"
