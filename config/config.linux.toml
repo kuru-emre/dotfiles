@@ -20,10 +20,7 @@ state = "present"
 state = "present"
 group = "kurue"
 groups = ["docker", "wheel"]
-home = "/var/lib/mise-cache"
-shell = "/usr/sbin/nologin"
-comment = "mise cache service"
-create_home = true
+home = "/home/kurue"
 
 [bootstrap.packages]
 "dnf:git" = "latest"
