@@ -3,6 +3,7 @@
 "dnf:gaze-kde" = "latest"
 
 [bootstrap.files."/etc/yum.repos.d/gaze.repo"]
+state = "present"
 source = "./gaze.repo"
 owner = "root"
 group = "root"
