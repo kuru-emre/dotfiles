@@ -2,4 +2,4 @@
 ghostty = { copr = "gundulabs/gaze" }
 
 [bootstrap.packages]
-"dnf:netbird" = "latest"
+"dnf:gaze" = "latest"
