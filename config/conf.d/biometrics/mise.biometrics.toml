@@ -1,5 +1,5 @@
-[bootstrap.files."/etc/yum.repos.d/netbird.repo"]
-source = "./netbird.repo"
+[bootstrap.files."/etc/yum.repos.d/gaze.repo"]
+source = "./gaze.repo"
 owner = "root"
 group = "root"
 mode = "0644"
