@@ -4,9 +4,6 @@ trusted_config_paths = ["~"]
 [bootstrap.services.mise-history]
 builtin = "history-watch"
 
-[bootstrap.hooks.pre_defaults]
-run = "ln -s ~/.config/mise/miserc.toml ~/miserc.toml"
-
 [dotfiles]
 "~/.config/git" = { mode = "track" }
 "~/.config/mise" = { mode = "track" }
