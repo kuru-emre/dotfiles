@@ -1,4 +1,4 @@
-#files: 1275	version: 5.9.2
+#files: 1290	version: 5.9.2
 
 _comps=(
 '-' '_precommand'
@@ -107,6 +107,7 @@ _comps=(
 'avcstat' '_selinux'
 'avdmanager' '_avdmanager'
 'awk' '_awk'
+'awww' '_awww'
 'axi-cache' '_axi-cache'
 'b2sum' '_md5sum'
 'barbican' '_openstack'
@@ -184,6 +185,7 @@ _comps=(
 'cal' '_cal'
 'calendar' '_calendar'
 'cap' '_cap'
+'cargo' '_cargo'
 'cask' '_cask'
 'cat' '_cat'
 'catchsegv' '_precommand'
@@ -476,6 +478,7 @@ _comps=(
 'express' '_webbrowser'
 'extcheck' '_java'
 'extractres' '_psutils'
+'eza' '_eza'
 'fab' '_fab'
 'fail2ban-client' '_fail2ban-client'
 'fail2ban-regex' '_fail2ban-regex'
@@ -483,6 +486,7 @@ _comps=(
 'fallocate' '_fallocate'
 'false' '_nothing'
 'fastboot' '_fastboot'
+'fastfetch' '_fastfetch'
 'fast-theme' '_fast-theme'
 'fc' '_fc'
 'fc-list' '_xft_fonts'
@@ -754,6 +758,7 @@ _comps=(
 'guilt-status' '_guilt'
 'guilt-top' '_guilt'
 'guilt-unapplied' '_guilt'
+'gum' '_gum'
 'guname' '_uname'
 'gunexpand' '_unexpand'
 'guniq' '_uniq'
@@ -793,6 +798,7 @@ _comps=(
 'http' '_httpie'
 'https' '_httpie'
 'hwinfo' '_hwinfo'
+'hyprpm' '_hyprpm'
 'ibus' '_ibus'
 'iceweasel' '_mozilla'
 'icombine' '_ispell'
@@ -1322,6 +1328,7 @@ _comps=(
 'pinfo' '_texinfo'
 'ping' '_ping'
 'ping6' '_ping'
+'pipx' '_pipx'
 'piuparts' '_piuparts'
 'pixz' '_pixz'
 'pkcon' '_pkcon'
@@ -1339,6 +1346,7 @@ _comps=(
 'pkill' '_pgrep'
 'plasmashell' '_plasmashell'
 'play' '_sox_ng'
+'playerctl' '_playerctl'
 'play_ng' '_sox_ng'
 'playwright' '_playwright'
 'pldd' '_pids'
@@ -1728,6 +1736,8 @@ _comps=(
 'swaplabel' '_swaplabel'
 'swapoff' '_swapoff'
 'swapon' '_swapon'
+'swaync' '_swaync'
+'swaync-client' '_swaync-client'
 'swift' '_swift'
 'swiftc' '_swift'
 'sw_vers' '_sw_vers'
@@ -1850,6 +1860,9 @@ _comps=(
 'typeset' '_typeset'
 'ubuntu-distro-info' '_distro_info'
 'udevadm' '_udevadm'
+'udiskie' '_udiskie'
+'udiskie-mount' '_udiskie-mount'
+'udiskie-umount' '_udiskie-umount'
 'udisksctl' '_udisksctl'
 'ufw' '_ufw'
 'ulimit' '_ulimit'
@@ -2348,20 +2361,23 @@ autoload -Uz _ab _afew _age _archlinux-java _atach \
             _xdg-mime _xsel _yamllint _yarn _zcash-cli \
             _zramctl _mise _starship _bun _devpod \
             _dotstate _gh _netbird _rbw _uv \
-            _zellij _adb _bat _bluetoothctl _bootctl \
-            _busctl _bwrap _code _coredumpctl _curl \
-            _dms _dnf5 _dolphin _fastboot _firewalld \
-            _flatpak _hostnamectl _ikhal _insmod _journalctl \
-            _kde-inhibit _kernel-install _khal _konsole _krunner \
-            _kscreenctl _kscreen-doctor _libinput _localectl _loginctl \
-            _lsmod _networkctl _nvme _oomctl _p11-kit \
-            _plasmashell _podman _pulseaudio _resolvectl _rg \
-            _rmmod _run0 _sd_bus_address _sd_hosts_or_user_at_host _sd_machines \
-            _sd_outputmodes _sd_unit_files _skopeo _storagectl _systemctl \
-            _systemd _systemd-analyze _systemd-cryptenroll _systemd-delta _systemd-hwdb \
-            _systemd-id128 _systemd-inhibit _systemd-path _systemd-run _systemd-sysinstall \
-            _systemd-sysupdate _systemd-tmpfiles _systemsettings _timedatectl _toolbox \
-            _trust _udevadm _udisks2 _updatectl _upower \
+            _zellij _adb _awww _bat _bluetoothctl \
+            _bootctl _busctl _bwrap _cargo _code \
+            _coredumpctl _curl _dms _dnf5 _dolphin \
+            _eza _fastboot _fastfetch _firewalld _flatpak \
+            _gh _gum _hostnamectl _hyprpm _ikhal \
+            _insmod _journalctl _kde-inhibit _kernel-install _khal \
+            _konsole _krunner _kscreenctl _kscreen-doctor _libinput \
+            _localectl _loginctl _lsmod _networkctl _nvme \
+            _oomctl _p11-kit _pipx _plasmashell _playerctl \
+            _podman _pulseaudio _resolvectl _rg _rmmod \
+            _run0 _sd_bus_address _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes \
+            _sd_unit_files _skopeo _storagectl _swaync _swaync-client \
+            _systemctl _systemd _systemd-analyze _systemd-cryptenroll _systemd-delta \
+            _systemd-hwdb _systemd-id128 _systemd-inhibit _systemd-path _systemd-run \
+            _systemd-sysinstall _systemd-sysupdate _systemd-tmpfiles _systemsettings _timedatectl \
+            _toolbox _trust _udevadm _udiskie _udiskie-canonical_paths \
+            _udiskie-mount _udiskie-umount _udisks2 _updatectl _upower \
             _userdbctl _varlinkctl _wl-copy _wl-paste _wpctl \
             _7zip _a2ps _a2utils _aap _abcde \
             _absolute_command_paths _ack _acpi _acpiconf _acpitool \
