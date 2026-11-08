@@ -1,6 +1,9 @@
 [settings]
 trusted_config_paths = ["~"]
 
+[settings.self_update]
+auto = true
+
 [bootstrap.services.mise-history]
 builtin = "history-watch"
 
