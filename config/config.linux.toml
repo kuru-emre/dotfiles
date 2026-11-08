@@ -25,7 +25,7 @@ comment = "Myself"
 "dnf:zsh" = "latest"
 "dnf:docker-ce" = "latest"
 "dnf:docker-ce-cli" = "latest"
-"dnf:docker-ce" = "latest"
+"dnf:containerd.io" = "latest"
 
 [bootstrap.hooks.pre-packages]
 run = """
