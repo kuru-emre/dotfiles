@@ -24,7 +24,7 @@ comment = "Myself"
 "dnf:nvim" = "latest"
 "dnf:zsh" = "latest"
 "dnf:docker-ce" = "latest"
-"dnf:docker-ce" = "latest"
+"dnf:docker-ce-cli" = "latest"
 "dnf:docker-ce" = "latest"
 
 [bootstrap.hooks.pre-packages]
