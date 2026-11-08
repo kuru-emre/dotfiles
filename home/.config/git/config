@@ -15,7 +15,7 @@
 [user]
   name = Emre Kuru
   email = kuru.emre@hotmail.com
-  signingKey = ~/.ssh/github.pubz
+  signingKey = ~/.ssh/github.pub
 
 [filter "lfs"]
   clean = git-lfs clean -- %f
