@@ -1,6 +1,6 @@
 [code]
 name=Visual Studio Code
-baseurl=https://microsoft.com
+baseurl=https://packages.microsoft.com/yumrepos/vscode
 enabled=1
 gpgcheck=1
-gpgkey=https://microsoft.com
+gpgkey=https://packages.microsoft.com/keys/microsoft.asc
