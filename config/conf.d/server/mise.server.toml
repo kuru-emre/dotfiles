@@ -9,7 +9,7 @@ owner = "root"
 group = "root"
 mode = "0755"
 
-[bootstrap.files."/etc/systemd/system/srv-data.mount"]
+[bootstrap.files."/etc/systemd/system/data.mount"]
 source = "./files/srv-data.mount"
 owner = "root"
 group = "root"
