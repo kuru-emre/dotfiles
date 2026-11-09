@@ -13,4 +13,4 @@ builtin = "history-watch"
 "~/.config/nvim" = { mode = "track" }
 "~/.config/starship" = { mode = "track" }
 "~/.config/zsh" = { mode = "track" }
-"~/.zshenv/local-bin" = { line = 'export PATH="$HOME/.local/bin:$PATH"' }
+"~/.zshenv" = { mode = "track" }

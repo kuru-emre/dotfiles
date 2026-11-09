@@ -30,11 +30,15 @@
       "autosave": true,
       "encrypt": false,
       "variants": []
+    },
+    {
+      "path": "home/.zshenv",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
     }
   ],
   "exclude": [],
   "recipients": [],
-  "permissions": {
-    "config/.config.toml.kate-swp": 384
-  }
+  "permissions": {}
 }
