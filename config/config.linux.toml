@@ -20,7 +20,6 @@ shell = "/usr/bin/zsh"
 comment = "Myself"
 
 [bootstrap.packages]
-"dnf:git" = "latest"
 "dnf:nvim" = "latest"
 "dnf:zsh" = "latest"
 "dnf:docker-ce" = "latest"
