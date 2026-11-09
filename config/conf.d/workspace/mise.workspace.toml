@@ -7,6 +7,8 @@ node = "latest"
 [bootstrap.packages]
 "dnf:code" = "latest"
 "dnf:papirus-icon-theme" = "latest"
+"dnf:nerd-fonts" = "latest"
+"dnf:ibm-plex-mono-fonts" = "latest"
 
 [bootstrap.files."/etc/yum.repos.d/vscode.repo"]
 source = "./code.repo"
