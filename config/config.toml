@@ -14,7 +14,3 @@ builtin = "history-watch"
 "~/.config/starship" = { mode = "track" }
 "~/.config/zsh" = { mode = "track" }
 "~/.zshenv/local-bin" = { line = 'export PATH="$HOME/.local/bin:$PATH"' }
-
-[history.origin]
-url = "https://github.com/kuru-emre/mise.git"
-branch = "main"
