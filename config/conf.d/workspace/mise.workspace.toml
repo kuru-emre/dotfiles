@@ -17,10 +17,3 @@ mode = "0644"
 
 [bootstrap.hooks.pre-packages]
 run = "sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc"
-
-[bootstrap.hooks.post-packages]
-run = """
-  git clone https://github.com/maximilionus/lucidglyph.git
-  sudo ./lucidglyph/lucidglyph.sh install
-  rm -rf ./lucidglyph
-"""
