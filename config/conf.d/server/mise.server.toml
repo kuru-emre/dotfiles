@@ -4,10 +4,6 @@ owner = "root"
 group = "root"
 mode = "0644"
 
-[bootstrap.directories."/srv/data"]
-owner = "root"
-group = "root"
-mode = "0755"
 
 [bootstrap.files."/etc/systemd/system/data.mount"]
 source = "./mounts/data.mount"
