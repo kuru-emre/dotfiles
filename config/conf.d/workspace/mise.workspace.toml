@@ -3,7 +3,6 @@ android-sdk = "latest"
 bun = "latest"
 node = "latest"
 
-[bootstrap.packages]
 
 [bootstrap.packages]
 "dnf:code" = "latest"
