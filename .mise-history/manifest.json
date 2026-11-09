@@ -34,7 +34,5 @@
   ],
   "exclude": [],
   "recipients": [],
-  "permissions": {
-    "config/conf.d/workspace/.code.repo.kate-swp": 384
-  }
+  "permissions": {}
 }
