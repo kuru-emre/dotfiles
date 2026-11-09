@@ -17,6 +17,7 @@ zsh = true
 "dnf:zoxide" = "latest"
 "dnf:eza" = "latest"
 "dnf:fd" = "latest"
+"dnf:git-delta" = "latest"
 
 [bootstrap.hooks.pre-packages]
 run = [
