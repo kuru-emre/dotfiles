@@ -10,7 +10,7 @@ mode = "0644"
 phase = "pre-packages"
 
 [bootstrap.hooks.pre-packages]
-run = "sudo rpm --import https://packages.gundulabs.com/keys/gundulabs-repo.asc"
+run = "sudo dnf config-manager addrepo --overwrite --from-repofile=/etc/yum.repos.d/gaze.repo"
 
 [bootstrap.hooks.post-packages]
 run = [
