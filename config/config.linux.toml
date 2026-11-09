@@ -10,6 +10,9 @@ login_shell = "zsh"
 [bootstrap.mise_shell_activate]
 zsh = true
 
+[bootstrap.dnf.repos]
+fonts = { copr = "che/nerd-fonts"}
+
 [bootstrap.packages]
 "dnf:nvim" = "latest"
 "dnf:zsh" = "latest"
