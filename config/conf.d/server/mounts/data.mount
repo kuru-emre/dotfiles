@@ -10,4 +10,4 @@ Type=ext4
 Options=defaults
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=local-fs.target
