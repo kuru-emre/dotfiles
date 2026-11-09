@@ -22,6 +22,7 @@ nerd_fonts = { copr = "che/nerd-fonts"}
 "dnf:fd" = "latest"
 "dnf:git-delta" = "latest"
 "dnf:nerd-fonts" = "latest"
+"dnf:ibm-plex-mono-fonts" = "latest"
 
 [bootstrap.hooks.pre-packages]
 run = [
