@@ -6,3 +6,6 @@ source = "./netbird.repo"
 owner = "root"
 group = "root"
 mode = "0644"
+
+[bootstrap.hooks.pre-packages]
+run = "sudo dnf config-manager addrepo --from-repofile=/etc/yum.repos.d/netbird.repo"
