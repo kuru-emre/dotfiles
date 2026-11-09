@@ -40,5 +40,7 @@
   ],
   "exclude": [],
   "recipients": [],
-  "permissions": {}
+  "permissions": {
+    "home/.config/zsh/..zshrc.kate-swp": 384
+  }
 }
