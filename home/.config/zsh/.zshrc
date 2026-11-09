@@ -40,4 +40,4 @@ autoload -Uz compinit
 compinit -d "$ZSH_COMPDUMP"
 
 # Mise
-eval "$(/home/kurue/.local/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
