@@ -34,5 +34,7 @@
   ],
   "exclude": [],
   "recipients": [],
-  "permissions": {}
+  "permissions": {
+    "config/.config.linux.toml.kate-swp": 384
+  }
 }
