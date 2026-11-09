@@ -4,6 +4,17 @@ owner = "root"
 group = "root"
 mode = "0644"
 
+[bootstrap.directories."/srv/data"]
+owner = "root"
+group = "root"
+mode = "0755"
+
+[bootstrap.files."/etc/systemd/system/srv-data.mount"]
+source = "./files/srv-data.mount"
+owner = "root"
+group = "root"
+mode = "0644"
+
 # [bootstrap.files."/usr/local/bin/srv-sync"]
 # source = "./syncer/sync"
 # owner = "root"
