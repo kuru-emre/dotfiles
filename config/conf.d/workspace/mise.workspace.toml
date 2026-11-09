@@ -6,7 +6,6 @@ ruby = "latest"
 
 [bootstrap.packages]
 "dnf:papirus-icon-theme" = "latest"
-"dnf:rbw" = "latest"
 "flatpak:com.brave.Browser" = "latest"
 
 [bootstrap.files."/etc/yum.repos.d/vscode.repo"]
