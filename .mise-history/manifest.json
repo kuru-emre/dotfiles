@@ -40,5 +40,7 @@
   ],
   "exclude": [],
   "recipients": [],
-  "permissions": {}
+  "permissions": {
+    "config/conf.d/workspace/.mise.workspace.toml.kate-swp": 384
+  }
 }
