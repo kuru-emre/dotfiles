@@ -7,7 +7,6 @@ starship = "latest"
 [bootstrap.user]
 login_shell = "zsh"
 
-
 [bootstrap.packages]
 "dnf:nvim" = "latest"
 "dnf:zsh" = "latest"
