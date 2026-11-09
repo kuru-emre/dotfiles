@@ -4,7 +4,7 @@ Requires=local-fs-pre.target
 After=local-fs-pre.target
 
 [Mount]
-What=/dev/disk/by-uuid/12345678-abcd-1234-abcd-123456789abc
+What=/dev/disk/by-uuid/fff8741c-f6d3-445c-acd2-3a657a9f6bd9
 Where=/srv
 Type=ext4
 Options=defaults
