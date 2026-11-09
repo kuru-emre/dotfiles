@@ -21,4 +21,5 @@ run = [
     "gaze keyring --kwallet", 
     "sudo gaze-kde-pam enable", 
     "sudo gaze-kde-pam enable-login",
+    "sudo systemctl enable gazed"
 ]
