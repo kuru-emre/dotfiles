@@ -10,6 +10,8 @@ login_shell = "zsh"
 [bootstrap.mise_shell_activate]
 zsh = true
 
+[bootstrap.groups.docker]
+
 [bootstrap.users.kurue]
 state = "present"
 uid = 1000
