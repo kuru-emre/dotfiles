@@ -4,6 +4,9 @@ bun = "latest"
 node = "latest"
 
 [bootstrap.packages]
+"dnf:code" = "latest"
+
+[bootstrap.packages]
 "dnf:papirus-icon-theme" = "latest"
 
 [bootstrap.files."/etc/yum.repos.d/vscode.repo"]
