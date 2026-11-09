@@ -13,6 +13,4 @@ run = "sudo dnf config-manager addrepo --overwrite --from-repofile=/etc/yum.repo
 
 
 [bootstrap.hooks.post-packages]
-run = [
-    "netbird up"
-]
+run = "netbird up"
