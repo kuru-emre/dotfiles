@@ -16,6 +16,7 @@ zsh = true
 "dnf:fzf" = "latest"
 "dnf:zoxide" = "latest"
 "dnf:eza" = "latest"
+"dnf:fd" = "latest"
 
 [bootstrap.hooks.pre-packages]
 run = [
