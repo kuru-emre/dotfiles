@@ -9,4 +9,4 @@ mode = "0644"
 phase = "pre-packages"
 
 [bootstrap.hooks.pre-packages]
-run = "sudo dnf config-manager addrepo --from-repofile=/etc/yum.repos.d/netbird.repo"
+run = "sudo dnf config-manager addrepo --overwrite --from-repofile=/etc/yum.repos.d/netbird.repo"
