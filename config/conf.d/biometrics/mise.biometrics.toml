@@ -16,6 +16,7 @@ run = "sudo dnf config-manager addrepo --overwrite --from-repofile=/etc/yum.repo
 run = [
     "sudo authselect select gaze with-silent-lastlog --force", 
     "sudo authselect enable-feature with-face-retry", 
+    "gaze config set storage.unlock_kwallet true",
     "gaze keyring --kwallet", 
     "sudo gaze-kde-pam enable", 
     "sudo gaze-kde-pam enable-login"
