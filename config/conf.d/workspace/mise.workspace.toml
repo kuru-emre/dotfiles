@@ -14,4 +14,4 @@ mode = "0644"
 phase = "pre-packages"
 
 [bootstrap.hooks.pre-packages]
-run = "sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc"
+run = "sudo dnf config-manager addrepo --from-repofile=/etc/yum.repos.d/vscode.repo"
