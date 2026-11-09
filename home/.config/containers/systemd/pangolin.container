@@ -1,0 +1,23 @@
+[Unit]
+Description=Pangolin tunnel
+
+
+[Container]
+ContainerName=pangolin
+Image=docker.io/fosrl/pangolin-cli:latest
+
+Network=proxy.network
+
+EnvironmentFile=/srv/apps/pangolin/.env
+
+DropCapability=ALL
+NoNewPrivileges=true
+PidsLimit=128
+
+
+[Service]
+Restart=always
+
+
+[Install]
+WantedBy=default.target

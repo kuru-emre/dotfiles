@@ -1,0 +1,26 @@
+[Unit]
+Description=Vaultwarden Container
+After=network-online.target
+Wants=network-online.target
+
+[Container]
+Image=docker.io/vaultwarden/server:latest
+ContainerName=vaultwarden
+
+EnvironmentFile=/srv/apps/vaultwarden/.env
+
+Network=proxy.network
+
+Volume=/srv/apps/vaultwarden/data:/data:z
+
+DropCapability=ALL
+NoNewPrivileges=true
+PidsLimit=128
+
+
+[Service]
+Restart=always
+
+
+[Install]
+WantedBy=default.target

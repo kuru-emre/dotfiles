@@ -1,0 +1,9 @@
+[Unit]
+Description=Shared reverse proxy network
+
+[Network]
+NetworkName=proxy
+Driver=bridge
+
+[Install]
+WantedBy=default.target

@@ -17,3 +17,6 @@ mode = "0644"
 # group = "root"
 # mode = "0755"
 
+[dotfiles]
+"~/.config/containers/systemd" = { mode = "track" }
+

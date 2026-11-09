@@ -1,0 +1,19 @@
+[Unit]
+Description=Immich Machine Learning Service
+BindsTo=immich-server.service
+Before=immich-server.service
+
+
+[Container]
+ContainerName=immich_machine_learning
+Image=ghcr.io/immich-app/immich-machine-learning:v3-openvino
+AutoUpdate=registry
+
+Network=immich.network
+
+Volume=/srv/apps/immich/data/model_cache:/cache:Z
+AddDevice=/dev/dri
+
+
+[Service]
+Restart=always

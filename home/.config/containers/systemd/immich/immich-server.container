@@ -1,0 +1,24 @@
+[Unit]
+Description=Immich Server
+Requires=immich-database.service immich-redis.service immich-machine-learning.service
+
+
+[Container]
+ContainerName=immich_server
+Image=ghcr.io/immich-app/immich-server:v3
+AutoUpdate=registry
+
+Network=proxy.network
+Network=immich.network
+
+Volume=/srv/media/immich:/data:z
+Volume=/etc/localtime:/etc/localtime:ro
+AddDevice=/dev/dri
+
+
+[Service]
+Restart=always
+
+
+[Install]
+WantedBy=default.target

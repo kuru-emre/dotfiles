@@ -1,0 +1,21 @@
+[Unit]
+Description=Immich PostgreSQL Database Service
+BindsTo=immich-server.service
+Before=immich-server.service
+
+[Container]
+ContainerName=immich_postgres
+Image=ghcr.io/immich-app/postgres:18-vectorchord1.1.1
+AutoUpdate=registry
+UserNS=keep-id
+
+Network=immich.network
+NetworkAlias=database
+
+EnvironmentFile=/srv/apps/immich/.env
+
+Volume=/srv/apps/immich/data/postgres:/var/lib/postgresql:Z
+
+
+[Service]
+Restart=always

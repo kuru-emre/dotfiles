@@ -1,0 +1,19 @@
+[Unit]
+Description=Immich Redis Service
+BindsTo=immich-server.service
+Before=immich-server.service
+
+
+[Container]
+ContainerName=immich_redis
+Image=docker.io/valkey/valkey:9
+AutoUpdate=registry
+
+Network=immich.network
+NetworkAlias=redis
+
+HealthCmd=redis-cli ping | grep -q PONG || exit 1
+
+
+[Service]
+Restart=always
