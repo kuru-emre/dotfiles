@@ -13,6 +13,7 @@ zsh = true
 [bootstrap.packages]
 "dnf:nvim" = "latest"
 "dnf:zsh" = "latest"
+"dnf:fzf" = "latest"
 
 [bootstrap.hooks.pre-packages]
 run = [
