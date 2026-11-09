@@ -4,32 +4,9 @@ owner = "root"
 group = "root"
 mode = "0644"
 
-[bootstrap.files."/usr/local/bin/srv-sync"]
-source = "./syncer/sync"
-owner = "root"
-group = "root"
-mode = "0755"
+# [bootstrap.files."/usr/local/bin/srv-sync"]
+# source = "./syncer/sync"
+# owner = "root"
+# group = "root"
+# mode = "0755"
 
-[bootstrap.compose.caddy]
-pull = "always"
-project_dir = "/srv/apps/caddy"
-
-[bootstrap.compose.immich]
-pull = "always"
-project_dir = "/srv/apps/immich"
-
-[bootstrap.compose.arcane]
-pull = "always"
-project_dir = "/srv/apps/arcane"
-
-[bootstrap.compose.filebrowser]
-pull = "always"
-project_dir = "/srv/apps/filebrowser"
-
-[bootstrap.compose.pangolin]
-pull = "always"
-project_dir = "/srv/apps/pangolin"
-
-[bootstrap.compose.vaultwarden]
-pull = "always"
-project_dir = "/srv/apps/vaultwarden"
