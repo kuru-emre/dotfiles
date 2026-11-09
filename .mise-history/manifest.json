@@ -14,6 +14,12 @@
       "variants": []
     },
     {
+      "path": "home/.config/gh",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
       "path": "home/.config/git",
       "autosave": true,
       "encrypt": false,
@@ -46,5 +52,9 @@
   ],
   "exclude": [],
   "recipients": [],
-  "permissions": {}
+  "permissions": {
+    "home/.config/gh": 489,
+    "home/.config/gh/config.yml": 384,
+    "home/.config/gh/hosts.yml": 384
+  }
 }
