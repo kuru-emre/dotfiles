@@ -17,6 +17,9 @@ mode = "0644"
 # group = "root"
 # mode = "0755"
 
+[boostrap.hooks.post-packages]
+run = "loginctl enable-linger"
+
 [dotfiles]
 "~/.config/containers/systemd" = { mode = "track" }
 

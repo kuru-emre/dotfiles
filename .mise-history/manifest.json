@@ -53,7 +53,6 @@
   "exclude": [],
   "recipients": [],
   "permissions": {
-    "config/conf.d/server/.mise.server.toml.kate-swp": 384,
     "home/.config/gh": 489,
     "home/.config/gh/config.yml": 384,
     "home/.config/gh/hosts.yml": 384
