@@ -4,7 +4,7 @@ bun = "latest"
 node = "latest"
 
 [bootstrap.dnf.repos]
-nerd_fonts = { copr = "che/nerd-fonts"}
+nerd_fonts = { copr = "che/nerd-fonts" }
 
 [bootstrap.packages]
 "dnf:code" = "latest"
@@ -21,3 +21,6 @@ phase = "pre-packages"
 
 [bootstrap.hooks.pre-packages]
 run = "sudo dnf config-manager addrepo --overwrite --from-repofile=/etc/yum.repos.d/vscode.repo"
+
+[bootstrap.hooks.post-packages]
+run = "sudo dnf remove @kde-pim @dial-up"
