@@ -162,18 +162,6 @@ dnf group install sound-and-video -y
 color_echo "yellow" "Installing Intel Hardware Accelerated Codecs..."
 dnf -y install intel-media-driver
 
-
-# App Installation
-
-
-# Customization
-
-
-# Custom user-defined commands
-# Custom user-defined commands
-echo "Created with ❤️ for Open Source"
-
-
 # Before finishing, ensure we're in a safe directory
 cd /tmp || cd $ACTUAL_HOME || cd /
 
