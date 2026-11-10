@@ -43,3 +43,21 @@ name = "ssh"
 port = 22
 protocol = "tcp"
 interface = "wt0"
+
+[[bootstrap.linux.firewall.rules]]
+name = "libvirt-dhcp"
+port = 67
+protocol = "udp"
+interface = "virbr0"
+
+[[bootstrap.linux.firewall.rules]]
+name = "libvirt-dns-udp"
+port = 53
+protocol = "udp"
+interface = "virbr0"
+
+[[bootstrap.linux.firewall.rules]]
+name = "libvirt-dns-tcp"
+port = 53
+protocol = "tcp"
+interface = "virbr0"
