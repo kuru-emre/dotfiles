@@ -11,6 +11,11 @@ phase = "pre-packages"
 [bootstrap.hooks.pre-packages]
 run = "sudo dnf config-manager addrepo --overwrite --from-repofile=/etc/yum.repos.d/netbird.repo"
 
-
 [bootstrap.hooks.post-packages]
 run = "netbird up"
+
+[[bootstrap.linux.firewall.rules]]
+name = "ssh"
+port = 22
+protocol = "tcp"
+interface = "wt0"
