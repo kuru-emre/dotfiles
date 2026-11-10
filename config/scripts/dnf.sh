@@ -7,8 +7,8 @@ echo "max_parallel_downloads=10" | tee -a /etc/dnf/dnf.conf > /dev/null
 echo "fastestmirror=True" | tee -a /etc/dnf/dnf.conf > /dev/null
 
 
+# Replace Fedora Flatpak Repo with Flathub for better package management and apps stability
 color_echo "yellow" "Replacing Fedora Flatpak Repo with Flathub..."
-dnf install -y flatpak
 flatpak remote-delete fedora --force || true
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak repair
