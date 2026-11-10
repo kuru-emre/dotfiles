@@ -13,3 +13,9 @@ flatpak remote-delete fedora --force || true
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak repair
 flatpak update
+
+# Enable RPM Fusion repositories to access additional software packages and codecs
+color_echo "yellow" "Enabling RPM Fusion repositories..."
+dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+dnf group install core -y
