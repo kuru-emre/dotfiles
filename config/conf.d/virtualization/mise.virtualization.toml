@@ -1,3 +1,6 @@
+[bootstrap.packages]
+"dnf:nvim" = "latest"
+
 [[bootstrap.linux.firewall.rules]]
 name = "libvirt-dhcp"
 port = 67
