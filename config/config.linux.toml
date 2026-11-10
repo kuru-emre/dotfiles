@@ -17,15 +17,7 @@ login_shell = "zsh"
 "dnf:git-delta" = "latest"
 
 [bootstrap.hooks.pre-packages]
-run = [
-  "sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm",
-  "sudo dnf install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm",
-  "sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1",
-  "sudo dnf update @core -y",
-  "sudo dnf install rpmfusion-*-appstream-data",
-  "sudo dnf swap ffmpeg-free ffmpeg --allowerasing",
-  "sudo dnf install intel-media-driver"
-]
+run = ["sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm", "sudo dnf install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm", "sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1", "sudo dnf update @core -y", "sudo dnf install rpmfusion-*-appstream-data", "sudo dnf swap ffmpeg-free ffmpeg --allowerasing", 'sudo dnf install @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin', "sudo dnf install intel-media-driver"]
 
 [bootstrap.services.firewalld]
 state = "stopped"
