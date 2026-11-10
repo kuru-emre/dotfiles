@@ -23,4 +23,4 @@ phase = "pre-packages"
 run = "sudo dnf config-manager addrepo --overwrite --from-repofile=/etc/yum.repos.d/vscode.repo"
 
 [bootstrap.hooks.post-packages]
-run = "sudo dnf remove @kde-pim @dial-up"
+run = "sudo dnf remove @kde-pim @dial-up -y"
