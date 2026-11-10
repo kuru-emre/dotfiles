@@ -148,6 +148,7 @@ fwupdmgr update -y
 color_echo "yellow" "Enabling RPM Fusion repositories..."
 dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+dnf install rpmfusion-*-appstream-data
 dnf group install core -y
 
 # Install multimedia codecs to enhance multimedia capabilities
