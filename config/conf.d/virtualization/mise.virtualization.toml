@@ -1,5 +1,5 @@
 [bootstrap.packages]
-"dnf:nvim" = "latest"
+"dnf:@virtualization" = "latest"
 
 [[bootstrap.linux.firewall.rules]]
 name = "libvirt-dhcp"
