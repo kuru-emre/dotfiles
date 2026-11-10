@@ -20,3 +20,8 @@ dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-releas
 dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 dnf group install core -y
 
+# Install multimedia codecs to enhance multimedia capabilities
+color_echo "yellow" "Installing multimedia codecs..."
+dnf swap ffmpeg-free ffmpeg --allowerasing -y
+dnf group install multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y
+dnf group install sound-and-video -y
