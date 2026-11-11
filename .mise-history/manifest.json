@@ -53,9 +53,6 @@
   "exclude": [],
   "recipients": [],
   "permissions": {
-    "config/scripts": 448,
-    "config/scripts/cleanup.sh": 448,
-    "config/scripts/fttd.sh": 448,
     "home/.config/gh": 489,
     "home/.config/gh/config.yml": 384,
     "home/.config/gh/hosts.yml": 384
