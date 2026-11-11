@@ -7,6 +7,8 @@ Wants=network-online.target
 [Container]
 Image=caddy-custom.build
 ContainerName=caddy
+AutoUpdate=registry
+
 EnvironmentFile=/srv/apps/caddy/.env
 
 Network=proxy.network
