@@ -6,6 +6,7 @@ Wants=network-online.target
 [Container]
 Image=docker.io/vaultwarden/server:latest
 ContainerName=vaultwarden
+AutoUpdate=registry
 
 EnvironmentFile=/srv/apps/vaultwarden/.env
 
