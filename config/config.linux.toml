@@ -3,6 +3,7 @@ java = "lts"
 python = "latest"
 usage = "latest"
 starship = "latest"
+rust = "latest"
 
 [bootstrap.user]
 login_shell = "zsh"
