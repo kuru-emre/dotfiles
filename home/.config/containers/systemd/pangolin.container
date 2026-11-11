@@ -5,6 +5,7 @@ Description=Pangolin tunnel
 [Container]
 ContainerName=pangolin
 Image=docker.io/fosrl/pangolin-cli:latest
+AutoUpdate=registry
 
 Network=proxy.network
 
