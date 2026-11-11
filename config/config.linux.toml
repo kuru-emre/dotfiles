@@ -6,7 +6,7 @@ starship = "latest"
 rust = "latest"
 
 [env]
-_.path = ["{{ env.HOME }}/scripts"]
+_.path = ["{{ mise_config_dir }}/scripts"]
 
 [bootstrap.user]
 login_shell = "zsh"
