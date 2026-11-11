@@ -5,9 +5,6 @@ usage = "latest"
 starship = "latest"
 rust = "latest"
 
-[tasks.cleanup]
-run = "{{ config_root }}/scripts/cleanup.sh"
-
 [bootstrap.user]
 login_shell = "zsh"
 
