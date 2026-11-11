@@ -15,6 +15,3 @@ builtin = "history-watch"
 "~/.config/starship" = { mode = "track" }
 "~/.config/zsh" = { mode = "track" }
 "~/.zshenv" = { mode = "track" }
-
-[tools]
-rust = "latest"
