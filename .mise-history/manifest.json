@@ -53,6 +53,7 @@
   "exclude": [],
   "recipients": [],
   "permissions": {
+    "config/scripts/fttd.sh": 484,
     "home/.config/gh": 489,
     "home/.config/gh/config.yml": 384,
     "home/.config/gh/hosts.yml": 384
