@@ -5,6 +5,9 @@ usage = "latest"
 starship = "latest"
 rust = "latest"
 
+[env]
+_.path = ["{{ env.HOME }}/scripts"]
+
 [bootstrap.user]
 login_shell = "zsh"
 
