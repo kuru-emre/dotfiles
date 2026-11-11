@@ -21,7 +21,7 @@ login_shell = "zsh"
 "dnf:git-delta" = "latest"
 
 [bootstrap.hooks.pre-packages]
-file = "sudo ./scripts/fttd.sh"
+file = "scripts/fttd.sh"
 
 [bootstrap.services.firewalld]
 state = "stopped"
