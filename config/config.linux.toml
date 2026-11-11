@@ -5,6 +5,10 @@ usage = "latest"
 starship = "latest"
 rust = "latest"
 
+[tasks.cleanup]
+file = "scripts/cleanup"
+dir = "{{ mise_config_dir}}"
+
 [bootstrap.user]
 login_shell = "zsh"
 
@@ -18,7 +22,7 @@ login_shell = "zsh"
 "dnf:git-delta" = "latest"
 
 [bootstrap.hooks.pre-packages]
-run = "sudo ./scripts/fttd"
+run = "sudo ./scripts/fttd.sh"
 
 [bootstrap.services.firewalld]
 state = "stopped"
