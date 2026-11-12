@@ -11,6 +11,8 @@ login_shell = "zsh"
 
 [bootstrap.packages]
 "dnf:nvim" = "latest"
+"dnf:starship" = "latest"
+"dnf:usage" = "latest"
 "dnf:zsh" = "latest"
 "dnf:fzf" = "latest"
 "dnf:zoxide" = "latest"
