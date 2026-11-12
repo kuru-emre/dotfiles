@@ -7,7 +7,6 @@ Before=immich-server.service
 ContainerName=immich_postgres
 Image=ghcr.io/immich-app/postgres:18-vectorchord1.1.1
 AutoUpdate=registry
-UserNS=keep-id
 
 Network=immich.network
 NetworkAlias=database
