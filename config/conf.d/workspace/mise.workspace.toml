@@ -9,7 +9,7 @@ nerd_fonts = { copr = "che/nerd-fonts" }
 [bootstrap.packages]
 "dnf:code" = "latest"
 "dnf:papirus-icon-theme" = "latest"
-"dnf:ibm-plex-mono-fonts" = "latest"
+"dnf:ibmplexmono-nerd-fonts " = "latest"
 
 [bootstrap.files."/etc/yum.repos.d/vscode.repo"]
 source = "./code.repo"
