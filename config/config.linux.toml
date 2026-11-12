@@ -1,8 +1,6 @@
 [tools]
 java = "lts"
 python = "latest"
-usage = "latest"
-starship = "latest"
 rust = "latest"
 
 [tasks.cleanup]
