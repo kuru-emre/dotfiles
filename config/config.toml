@@ -15,6 +15,3 @@ builtin = "history-watch"
 "~/.config/starship" = { mode = "track" }
 "~/.config/zsh" = { mode = "track" }
 "~/.zshenv" = { mode = "track" }
-
-[tools]
-kotlin = { version = "latest", asset_pattern = "kotlin-compiler-*.zip", bin_path = "kotlinc/bin" }
