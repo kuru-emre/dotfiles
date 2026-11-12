@@ -154,7 +154,7 @@ dnf group install core -y
 dnf install rpmfusion-*-appstream-data
 
 # Enable Terra repositories
-color_echo "yellow" "Enabling RPM Fusion repositories..."
+color_echo "yellow" "Enabling Terra repositories..."
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 
 # Install multimedia codecs to enhance multimedia capabilities
