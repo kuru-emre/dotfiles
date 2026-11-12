@@ -5,7 +5,6 @@ node = "latest"
 
 [bootstrap.packages]
 "dnf:code" = "latest"
-"dnf:zed" = "latest"
 "dnf:papirus-icon-theme" = "latest"
 "dnf:ibmplexmono-nerd-fonts" = "latest"
 
