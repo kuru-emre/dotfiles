@@ -7,14 +7,13 @@ Before=immich-server.service
 ContainerName=immich_postgres
 Image=ghcr.io/immich-app/postgres:18-vectorchord1.1.1
 AutoUpdate=registry
-User=1000:1000
 
 Network=immich.network
 NetworkAlias=database
 
 EnvironmentFile=/srv/apps/immich/.env
 
-Volume=/srv/apps/immich/data/postgres:/var/lib/postgresql/data:Z
+Volume=/srv/apps/immich/data/postgres:/var/lib/postgresql:Z
 
 
 [Service]
