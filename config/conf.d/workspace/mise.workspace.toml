@@ -3,13 +3,9 @@ android-sdk = "latest"
 bun = "latest"
 node = "latest"
 
-[bootstrap.dnf.repos]
-nerd_fonts = { copr = "che/nerd-fonts" }
-
 [bootstrap.packages]
 "dnf:code" = "latest"
 "dnf:papirus-icon-theme" = "latest"
-"dnf:nerd-fonts" = "latest"
 "dnf:ibm-plex-mono-fonts" = "latest"
 
 [bootstrap.files."/etc/yum.repos.d/vscode.repo"]
