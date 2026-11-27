@@ -34,7 +34,7 @@ run = "[ -s age.txt ] || age -d -o age.txt age"
 "~/.config/dfiles" = { mode = "track" }
 "~/.config/gh" = { mode = "track" }
 "~/.config/git" = { mode = "track" }
-"~/.config/keepassxc/keepassxc.ini" = { mode = "track", encrypt = true }
+"~/.config/keepassxc" = { mode = "track", encrypt = true }
 "~/.config/kitty" = { mode = "track", include = ["kitty.conf"] }
 "~/.config/lig" = { mode = "track" }
 "~/.config/mise" = { mode = "track" }
