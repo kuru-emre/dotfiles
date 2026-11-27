@@ -24,7 +24,7 @@ run = "mise run decrypt-age"
 [tasks.decrypt-age]
 description = "Decrypt age key file"
 dir = "{{config_root}}"
-sources = ["dotfiles.age"]
+sources = ["age"]
 outputs = ["age.txt"]
 run = "[ -s age.txt ] || age -d -o age.txt age"
 
