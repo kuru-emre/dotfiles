@@ -12,6 +12,7 @@
 
 # ── before the first prompt ──────────────────────────────────────────────
 zflash load $ZDOTDIR/confs/options.zsh            # your own files work like plugins
+zflash defer ohmyzsh/ohmyzsh
 
 # prompt: run `<tool> init zsh` once, at build time, instead of every start
 zflash eval 'lig init zsh pre'
@@ -27,7 +28,6 @@ zflash defer olets/zsh-transient-prompt
 
 # your aliases and functions last, so they win over plugin aliases
 # completions only
-# zflash defer ohmyzsh/ohmyzsh
 zflash defer $ZDOTDIR/confs/functions.zsh
 zflash defer $ZDOTDIR/confs/aliases.zsh
 
