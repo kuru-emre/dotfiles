@@ -2,7 +2,7 @@
 repos_dir = "~/Repos"
 
 [settings]
-trusted_config_paths = ["~/.config", "~/repos"]
+trusted_config_paths = ["~/.config", "{{ vars.repos_dir }}"]
 
 [settings.self_update]
 auto = true
