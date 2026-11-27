@@ -1,0 +1,50 @@
+{
+ "version": 2,
+ "bookmarks": [
+  {
+   "path": "recent:///",
+   "label": "recent",
+   "icon": ""
+  },
+  {
+   "path": "/home/kurue",
+   "label": "kurue",
+   "icon": ""
+  },
+  {
+   "path": "/home/kurue/Documents",
+   "label": "Documents",
+   "icon": ""
+  },
+  {
+   "path": "/home/kurue/Downloads",
+   "label": "Downloads",
+   "icon": ""
+  },
+  {
+   "path": "/home/kurue/Pictures",
+   "label": "Pictures",
+   "icon": ""
+  },
+  {
+   "path": "/home/kurue/Videos",
+   "label": "Videos",
+   "icon": ""
+  },
+  {
+   "path": "/home/kurue/Gdrive",
+   "label": "Gdrive",
+   "icon": ""
+  },
+  {
+   "path": "/home/kurue/Repos",
+   "label": "Repos",
+   "icon": ""
+  },
+  {
+   "path": "trash:///",
+   "label": "trash",
+   "icon": ""
+  }
+ ]
+}

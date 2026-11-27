@@ -1,0 +1,39 @@
+[vars]
+repos_dir = "~/Repos"
+
+[settings]
+trusted_config_paths = ["~/.config", "~/repos"]
+
+[settings.self_update]
+auto = true
+
+[history.encryption]
+recipients = [
+  "age19udr0n8rg5uy54lxfx4twlhvcpq9aj8nn2qmrmv6j6z8lpcxgveq80unsc",
+]
+
+[bootstrap.services.mise-history]
+builtin = "history-watch"
+
+[bootstrap.repos]
+"{{ vars.repos_dir }}/portfolio" = { url = "git@github.com:kuru-emre/portfolio" }
+
+[bootstrap.hooks.post-dotfiles]
+run = "[ -s age.txt ] || age -d -o age.txt age"
+
+[dotfiles]
+"~/.config/atuin" = { mode = "track" }
+"~/.config/dankcal" = { mode = "track" }
+"~/.config/dfiles" = { mode = "track" }
+"~/.config/gh" = { mode = "track" }
+"~/.config/git" = { mode = "track" }
+"~/.config/kitty" = { mode = "track", include = ["kitty.conf"] }
+"~/.config/lig" = { mode = "track" }
+"~/.config/mise" = { mode = "track" }
+"~/.config/nvim" = { mode = "track" }
+"~/.config/rclone" = { mode = "track", encrypt = true }
+"~/.config/starship" = { mode = "track" }
+"~/.config/zsh" = { mode = "track", exclude = ["*.zwc"] }
+"~/.config/zsh-patina" = { mode = "track" }
+"~/.ssh" = { mode = "track", exclude = ["agent", "known_hosts"] }
+"~/.zshenv" = { mode = "track" }

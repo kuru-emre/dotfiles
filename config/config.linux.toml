@@ -1,0 +1,40 @@
+[tools]
+java = "lts"
+python = "latest"
+
+[bootstrap.user]
+login_shell = "zsh"
+
+[bootstrap.services.zsh-patina]
+scope = "user"
+enabled = true
+command = "zsh-patina start --no-daemon"
+state = "running"
+
+[bootstrap.packages]
+"pacman:paru" = "latest"
+"pacman:ouch" = "latest"
+"pacman:nvim" = "latest"
+"pacman:starship" = "latest"
+"pacman:usage" = "latest"
+"pacman:zsh" = "latest"
+"pacman:fzf" = "latest"
+"pacman:zoxide" = "latest"
+"pacman:eza" = "latest"
+"pacman:fd" = "latest"
+"pacman:ripgrep" = "latest"
+"pacman:bat" = "latest"
+"pacman:tealdeer" = "latest"
+"pacman:dust" = "latest"
+"pacman:procs" = "latest"
+"pacman:atuin" = "latest"
+"pacman:git-delta" = "latest"
+"pacman:openssh" = "latest"
+
+"aur:zsh-patina-bin" = "latest"
+"aur:lig-bin" = "latest"
+
+[bootstrap.linux.firewall]
+backend = "nftables"
+default_incoming = "deny"
+default_outgoing = "allow"

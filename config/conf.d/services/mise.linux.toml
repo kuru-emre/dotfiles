@@ -1,0 +1,17 @@
+[bootstrap.directories."~/Gdrive"]
+state = "present"
+
+[bootstrap.services.rclone]
+scope = "user"
+enabled = true
+command = 'rclone mount gdrive: "%h/Gdrive" --vfs-cache-mode full --password-command "systemd-creds --user --name="rclone-pw" decrypt %E/credstore.encrypted/rclone-pw.cred -"'
+restart = "on-failure"
+
+[bootstrap.services.keepassxc]
+scope = "user"
+enabled = true
+command = '/bin/sh -c "systemd-creds --user --name="keepassxc-pw" decrypt \"%E/credstore.encrypted/keepassxc-pw.cred\" - | keepassxc --pw-stdin \"%h/Gdrive/pswd.kdbx\""'
+restart = "always"
+
+[bootstrap.hooks.pre-packages]
+run = "{{ config_root }}/creds"

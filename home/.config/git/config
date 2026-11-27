@@ -1,0 +1,47 @@
+[core]
+  editor = nvim
+	pager = delta
+
+[init]
+  defaultBranch = main
+
+[fetch]
+  prune = true
+  prunetags = true
+
+[push]
+  autoSetupRemote = true
+
+[user]
+  name = Emre Kuru
+  email = kuru.emre@hotmail.com
+	signingkey = ~/ssh/github.pub
+
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+    dark = true
+	side-by-side = true
+
+[merge]
+	conflictstyle = zdiff3
+
+[gpg]
+	format = ssh
+
+[tag]
+  gpgsign = true
+
+[commit]
+	gpgsign = true
+  
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers

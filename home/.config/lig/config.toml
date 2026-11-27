@@ -1,0 +1,14 @@
+[ui]
+theme = "terminal"
+border = "rounded" 
+icons = "nerd"
+height = 12
+
+[keys]
+accept = ["tab"]
+prev = ["up"]
+next = ["down"]
+
+[behavior]
+history = false
+show_hidden_files = true

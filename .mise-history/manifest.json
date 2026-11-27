@@ -1,0 +1,117 @@
+{
+  "format": 1,
+  "enrollment": [
+    {
+      "path": "config",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
+      "path": "home/.config/atuin",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
+      "path": "home/.config/dankcal",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
+      "path": "home/.config/dfiles",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
+      "path": "home/.config/gh",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
+      "path": "home/.config/git",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
+      "path": "home/.config/kitty",
+      "autosave": true,
+      "encrypt": false,
+      "variants": [],
+      "include": [
+        "kitty.conf"
+      ]
+    },
+    {
+      "path": "home/.config/lig",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
+      "path": "home/.config/nvim",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
+      "path": "home/.config/rclone",
+      "autosave": true,
+      "encrypt": true,
+      "variants": []
+    },
+    {
+      "path": "home/.config/starship",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
+      "path": "home/.config/zsh",
+      "autosave": true,
+      "encrypt": false,
+      "variants": [],
+      "exclude": [
+        "*.zwc"
+      ]
+    },
+    {
+      "path": "home/.config/zsh-patina",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
+      "path": "home/.ssh",
+      "autosave": true,
+      "encrypt": false,
+      "variants": [],
+      "exclude": [
+        "agent",
+        "known_hosts"
+      ]
+    },
+    {
+      "path": "home/.zshenv",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    }
+  ],
+  "exclude": [],
+  "recipients": [
+    "age19udr0n8rg5uy54lxfx4twlhvcpq9aj8nn2qmrmv6j6z8lpcxgveq80unsc"
+  ],
+  "permissions": {
+    "home/.config/atuin/config.toml": 384,
+    "home/.config/gh": 489,
+    "home/.config/gh/config.yml": 384,
+    "home/.config/gh/hosts.yml": 384,
+    "home/.config/rclone/rclone.conf": 384,
+    "home/.ssh": 448
+  }
+}
