@@ -19,6 +19,7 @@ builtin = "history-watch"
 "{{ vars.repos_dir }}/portfolio" = { url = "git@github.com:kuru-emre/portfolio" }
 
 [bootstrap.hooks.post-dotfiles]
+dir = "{{config_root}}"
 run = "[ -s {{config_root}}/age.txt ] || age -d -o {{config_root}}/age.txt age"
 
 [dotfiles]
