@@ -29,7 +29,7 @@ state = "running"
 "pacman:libreoffice" = "latest"
 "pacman:adw-gtk-theme" = "latest"
 "pacman:papirus-icon-theme" = "latest"
-"pacman:ttf-ibmplex-mono-nerd" = "latest"
+"pacman:ttf-noto-nerd" = "latest"
 
 "aur:visual-studio-code-bin" = "latest"
 "aur:brave-bin" = "latest"
