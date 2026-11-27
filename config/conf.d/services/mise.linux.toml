@@ -4,7 +4,7 @@ state = "present"
 [bootstrap.services.rclone]
 scope = "user"
 enabled = true
-command = 'rclone mount gdrive: "%h/Gdrive" --vfs-cache-mode full --password-command "systemd-creds --user --name="rclone-pw" decrypt %E/credstore.encrypted/rclone-pw.cred -"'
+command = 'rclone mount gdrive: "%h/Gdrive" --vfs-cache-mode full'
 restart = "on-failure"
 
 [bootstrap.services.keepassxc]

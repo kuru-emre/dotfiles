@@ -24,5 +24,4 @@ ensure_cred() {
   echo "✓ Initialized and verified '$name'"
 }
 
-ensure_cred "rclone-pw" "Rclone Config Password:"
 ensure_cred "keepassxc-pw" "KeePassXC Database Password:"
