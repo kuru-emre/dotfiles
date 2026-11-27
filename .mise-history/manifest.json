@@ -38,6 +38,12 @@
       "variants": []
     },
     {
+      "path": "home/.config/keepassxc/keepassxc.ini",
+      "autosave": true,
+      "encrypt": true,
+      "variants": []
+    },
+    {
       "path": "home/.config/kitty",
       "autosave": true,
       "encrypt": false,
