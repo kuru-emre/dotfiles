@@ -19,7 +19,7 @@ builtin = "history-watch"
 "{{ vars.repos_dir }}/portfolio" = { url = "git@github.com:kuru-emre/portfolio" }
 
 [bootstrap.hooks.post-dotfiles]
-run = "mise run decrypt-age"
+run = "mise tasks decrypt-age"
 
 [tasks.decrypt-age]
 description = "Decrypt age key file"
