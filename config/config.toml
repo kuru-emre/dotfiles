@@ -21,6 +21,13 @@ builtin = "history-watch"
 [bootstrap.hooks.post-dotfiles]
 run = '[ -s "$HOME/.config/mise/age.txt" ] || age -d -p -o "$HOME/.config/mise/age.txt" "$HOME/.config/mise/age"'
 
+[tasks.decrypt-age]
+description = "Decrypt age key file"
+dir = "{{config_root}}"
+sources = ["age"]
+outputs = ["age.txt"]
+run = "[ -s age.txt ] || age -d -p -o age.txt age"
+
 [dotfiles]
 "~/.config/atuin" = { mode = "track" }
 "~/.config/dankcal" = { mode = "track" }
