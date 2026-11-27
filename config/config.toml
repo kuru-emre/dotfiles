@@ -26,7 +26,7 @@ description = "Decrypt age key file"
 dir = "{{config_root}}"
 sources = ["age"]
 outputs = ["age.txt"]
-run = "[ -s age.txt ] || age -d -p -o age.txt age"
+run = "[ -s age.txt ] || age -d -o age.txt age"
 
 [dotfiles]
 "~/.config/atuin" = { mode = "track" }
