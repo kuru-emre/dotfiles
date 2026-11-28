@@ -2,10 +2,18 @@
 REPOS_DIR = "~/Repos"
 CRED_DIR = "{{ xdg_config_home }}/credstore.encrypted"
 
+[history]
+sync = "sync"
+sync_interval = "1h"  # Push at most once per hour instead of seconds after save
+
 [history.encryption]
 recipients = [
   "age19udr0n8rg5uy54lxfx4twlhvcpq9aj8nn2qmrmv6j6z8lpcxgveq80unsc",
 ]
+
+[history.watch]
+debounce = "30s"  # Wait 30s of quiet before saving a checkpoint
+max_interval = "5m"
 
 [bootstrap.services.mise-history]
 builtin = "history-watch"
