@@ -26,7 +26,7 @@ restart = "on-failure"
 [bootstrap.services.keepassxc]
 scope = "user"
 enabled = true
-command = '/bin/sh -c "systemd-creds --user --name="keepassxc-pw" decrypt \"%E/credstore.encrypted/keepassxc-pw\" - | keepassxc --pw-stdin \"%h/Gdrive/pswd.kdbx\""'
+command = 'systemd-creds --user --name="keepassxc-pw" decrypt "%E/credstore.encrypted/keepassxc-pw" - | keepassxc --pw-stdin "%h/Gdrive/pswd.kdbx"'
 restart = "always"
 
 [tasks."setup-oo7"]
