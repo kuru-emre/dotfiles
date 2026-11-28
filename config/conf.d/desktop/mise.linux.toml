@@ -39,4 +39,4 @@ state = "running"
 "aur:dux-greeter-bin" = "latest"
 "aur:gaze-bin" = "latest"
 
-[tasks.systemd-creds]
+[tasks."systemd-creds"]
