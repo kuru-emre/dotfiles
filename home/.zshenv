@@ -15,8 +15,3 @@ export PAGER="less"
 
 # 4. De-clutter $HOME (XDG Overrides for CLI tools & languages)
 export LESSHISTFILE="$XDG_STATE_HOME/less/history"
-
-# Update PATH and defaults
-export PATH="$XDG_BIN_HOME:$PATH"
-export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-export EDITOR="nvim"
