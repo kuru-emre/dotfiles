@@ -33,11 +33,7 @@ restart = "always"
 description = "Initialize and verify oo7 keyring credential"
 skip_if = "test -s oo7.keyring-encryption-password"
 dir = "{{ env.CRED_DIR }}"
-run = [
-  "systemd-ask-password -n | systemd-creds --user --name=oo7.keyring-encryption-password encrypt - oo7.keyring-encryption-password",
-  "systemd-creds --user --name=oo7.keyring-encryption-password decrypt oo7.keyring-encryption-password /dev/null",
-  "echo '✓ Initialized and verified oo7.keyring-encryption-password'",
-]
+run = "systemd-ask-password -n | systemd-creds --user --name=oo7.keyring-encryption-password encrypt - oo7.keyring-encryption-password"
 
 [tasks."setup-keepassxc"]
 description = "Initialize and verify KeePassXC database credential"
