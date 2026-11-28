@@ -11,5 +11,7 @@ path=(
   "$GOPATH/bin"
   $path
 )
-
 export PATH
+
+# SSH Agent socket (imported into systemd/GUI apps by niri-session)
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
