@@ -20,13 +20,6 @@ builtin = "history-watch"
 [bootstrap.hooks.post-dotfiles]
 run = "mise run decrypt-age"
 
-[tasks.decrypt-age]
-quiet = true
-description = "Decrypt age key file"
-dir = "{{mise_config_dir}}"
-skip_if = "test -s age"
-run = "age -d -o age.txt age"
-
 [dotfiles]
 "~/.config/atuin" = { mode = "track" }
 "~/.config/dankcal" = { mode = "track" }
@@ -48,3 +41,10 @@ run = "age -d -o age.txt age"
 "~/.local/share/wallpapers" = { mode = "track" }
 "~/.ssh" = { mode = "track", exclude = ["agent", "known_hosts"] }
 "~/.zshenv" = { source = "~/.config/zsh/.zshenv", mode = "symlink" }
+
+[tasks.decrypt-age]
+quiet = true
+description = "Decrypt age key file"
+dir = "{{mise_config_dir}}"
+skip_if = "test -s age"
+run = "age -d -o age.txt age"
