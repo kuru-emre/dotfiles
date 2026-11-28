@@ -5,7 +5,6 @@ alias la='eza -lah --icons --group-directories-first --git'
 alias tree='eza --tree --icons'
 
 # bat (replaces cat)
-# --style=plain -p makes it behave like cat when you just want text, or remove flags for full line numbers/borders
 alias cat='bat --paging=never'
 alias catp='bat' # Use 'catp' when you want paging and line numbers
 
