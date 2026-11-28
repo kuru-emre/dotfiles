@@ -25,6 +25,7 @@ zflash eval --defer 'atuin init zsh --disable-up-arrow'
 zflash eval --defer 'zoxide init zsh --cmd cd'
 
 zflash defer olets/zsh-transient-prompt
+zflash defer zsh-users/zsh-
 
 # your aliases and functions last, so they win over plugin aliases
 # completions only
