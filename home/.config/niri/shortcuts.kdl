@@ -1,0 +1,5 @@
+binds {
+    Mod+E { spawn "code"; }
+    Mod+B { spawn "brave"; }
+    Mod+Slash { spawn "keepassxc"; }
+}

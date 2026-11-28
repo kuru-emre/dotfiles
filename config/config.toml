@@ -40,6 +40,7 @@ run = "age -d -o age.txt age"
 "~/.config/kitty" = { mode = "track", include = ["kitty.conf"] }
 "~/.config/lig" = { mode = "track" }
 "~/.config/mise" = { mode = "track" }
+"~/.config/niri/shortcuts.kdl" = { mode = "track" }
 "~/.config/nvim" = { mode = "track" }
 "~/.config/rclone" = { mode = "track", encrypt = true }
 "~/.config/starship" = { mode = "track" }
