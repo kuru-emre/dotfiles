@@ -8,8 +8,6 @@ export XDG_BIN_HOME="${XDG_BIN_HOME:-$HOME/.local/bin}"
 # Set Zsh and Zflash paths using XDG variables
 export MISE_AUTO_ENV=true
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-export ZFLASH_HOME="$XDG_DATA_HOME/zflash"
-export ZFLASH_COMPINIT=0
 
 # Update PATH and defaults
 export PATH="$XDG_BIN_HOME:$PATH"
