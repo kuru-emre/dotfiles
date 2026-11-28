@@ -127,12 +127,6 @@
         "agent",
         "known_hosts"
       ]
-    },
-    {
-      "path": "home/.zshenv",
-      "autosave": true,
-      "encrypt": false,
-      "variants": []
     }
   ],
   "exclude": [],
