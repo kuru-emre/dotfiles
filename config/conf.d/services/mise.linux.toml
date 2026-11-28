@@ -1,9 +1,3 @@
-[env]
-CRED_DIR = "{{ xdg_config_home }}/credstore.encrypted"
-
-[bootstrap.hooks.pre-packages]
-run = "mise run setup-oo7 && mise run setup-keepassxc"
-
 [bootstrap.services.oo7-daemon]
 scope = "user"
 enabled = true
