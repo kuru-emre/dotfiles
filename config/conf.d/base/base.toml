@@ -5,5 +5,8 @@ flutter = "latest"
 python = "latest"
 java = "lts"
 
+[bootstrap.user]
+login_shell = "zsh"
+
 [bootstrap.repos]
 "{{ vars.REPOS_DIR }}/portfolio" = { url = "git@github.com:kuru-emre/portfolio" }
