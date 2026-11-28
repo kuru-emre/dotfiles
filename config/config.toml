@@ -20,10 +20,6 @@ builtin = "history-watch"
 [bootstrap.hooks.post-dotfiles]
 run = "mise run decrypt-age"
 
-[tools]
-bun = "latest"
-node = "latest"
-
 [dotfiles]
 "~/.config/atuin" = { mode = "track" }
 "~/.config/dankcal" = { mode = "track" }
