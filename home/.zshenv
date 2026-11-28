@@ -15,7 +15,3 @@ export PAGER="moor"
 
 # Load tool-specific environment variables
 [[ -f "$ZDOTDIR/env.zsh" ]] && source "$ZDOTDIR/env.zsh"
-
-# 4. De-clutter $HOME (XDG Overrides for CLI tools & languages)
-export LESSHISTFILE="$XDG_STATE_HOME/less/history"
-export MISE_AUTO_ENV=true
