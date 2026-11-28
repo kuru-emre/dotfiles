@@ -1,6 +1,3 @@
-[env]
-CRED_DIR = "{{ xdg_config_home }}/credstore.encrypted"
-
 [tools]
 bun = "latest"
 node = "latest"
