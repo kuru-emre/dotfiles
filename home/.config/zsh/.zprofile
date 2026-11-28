@@ -1,8 +1,9 @@
 # Prevent duplicate entries in PATH
 typeset -U path PATH
 
-# Mise Shims
-eval "$(mise activate zsh --shims)"
+if command -v mise &> /dev/null; then
+  eval "$(mise activate zsh --shims)"
+fi
 
 path=(
   "$XDG_BIN_HOME"
