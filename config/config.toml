@@ -14,6 +14,7 @@ CRED_DIR = "{{ xdg_config_home }}/credstore.encrypted"
 run = "mise run decrypt-age"
 
 [history]
+sync_debounce = "2d"
 
 [dotfiles]
 "~/.config/atuin" = { mode = "track" }
