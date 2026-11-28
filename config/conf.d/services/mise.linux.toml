@@ -32,6 +32,7 @@ restart = "always"
 [tasks."setup-oo7"]
 description = "Initialize and verify oo7 keyring credential"
 skip_if = "test -s \"$CRED_DIR/oo7.keyring-encryption-password\""
+dir = "{{ env.CRED_DIR }}"
 run = [
   "systemd-ask-password -n 'oo7 Keyring Password' | systemd-creds --user --name=oo7.keyring-encryption-password encrypt - \"$CRED_DIR/oo7.keyring-encryption-password\"",
   "systemd-creds --user --name=oo7.keyring-encryption-password decrypt \"$CRED_DIR/oo7.keyring-encryption-password\" /dev/null",
