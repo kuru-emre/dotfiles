@@ -7,12 +7,6 @@ run = "mise run setup-oo7 && mise run setup-keepassxc"
 [bootstrap.directories."~/Gdrive"]
 state = "present"
 
-[bootstrap.services.zsh-patina]
-scope = "user"
-enabled = true
-command = "zsh-patina start --no-daemon"
-state = "running"
-
 [bootstrap.services.oo7-daemon]
 scope = "user"
 enabled = true
