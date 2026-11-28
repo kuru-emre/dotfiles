@@ -36,3 +36,5 @@ export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm
 # DevPod
 export DEVPOD_HOME=$XDG_DATA_HOME/devpod
 
+# PATH
+export PATH=$XDG_BIN_HOME:$PUB_CACHE/bin:$PATH
