@@ -3,9 +3,7 @@ REPOS_DIR = "~/Repos"
 CRED_DIR = "{{ xdg_config_home }}/credstore.encrypted"
 
 [history.encryption]
-recipients = [
-  "age19udr0n8rg5uy54lxfx4twlhvcpq9aj8nn2qmrmv6j6z8lpcxgveq80unsc",
-]
+recipients = ["age19udr0n8rg5uy54lxfx4twlhvcpq9aj8nn2qmrmv6j6z8lpcxgveq80unsc"]
 
 [bootstrap.services.mise-history]
 builtin = "history-watch"
