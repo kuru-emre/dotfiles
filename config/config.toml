@@ -2,11 +2,6 @@
 REPOS_DIR = "~/Repos"
 CRED_DIR = "{{ xdg_config_home }}/credstore.encrypted"
 
-[settings]
-trusted_config_paths = ["~/.config", "{{ vars.REPOS_DIR }}"]
-self_update = { auto = true }
-experimental = true
-
 [history.encryption]
 recipients = [
   "age19udr0n8rg5uy54lxfx4twlhvcpq9aj8nn2qmrmv6j6z8lpcxgveq80unsc",
@@ -39,3 +34,8 @@ run = "mise run decrypt-age"
 "~/.local/share/wallpapers" = { mode = "track" }
 "~/.ssh" = { mode = "track", exclude = ["agent", "known_hosts"] }
 "~/.zshenv" = { source = "~/.config/zsh/.zshenv", mode = "symlink" }
+
+[settings]
+trusted_config_paths = ["~/.config", "{{ vars.REPOS_DIR }}"]
+self_update = { auto = true }
+experimental = true
