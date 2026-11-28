@@ -1,14 +1,3 @@
-[bootstrap.services."netbird@main"]
-enabled = true
-scope = "system"
-state = "running"
-
-[bootstrap.services.zsh-patina]
-enabled = true
-scope = "user"
-state = "running"
-command = "zsh-patina start --no-daemon"
-
 [bootstrap.packages]
 "pacman:paru" = "latest"
 "pacman:ouch" = "latest"
@@ -33,6 +22,17 @@ command = "zsh-patina start --no-daemon"
 "aur:netbird-bin" = "latest"
 "aur:zsh-patina-bin" = "latest"
 "aur:lig-bin" = "latest"
+
+[bootstrap.services."netbird@main"]
+enabled = true
+scope = "system"
+state = "running"
+
+[bootstrap.services.zsh-patina]
+enabled = true
+scope = "user"
+state = "running"
+command = "zsh-patina start --no-daemon"
 
 [bootstrap.linux.firewall]
 backend = "nftables"
