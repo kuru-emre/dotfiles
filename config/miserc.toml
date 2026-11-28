@@ -2,6 +2,6 @@ auto_env = true  # Auto-activates unix, linux/macos, and linux-x64/arm64
 env_conf_d = true  # Makes conf.d/<name>.<env>.toml load only when <env> is active
 
 [env_sets]
-server = ["base", "containers"]
-desktop = ["base", "containers", "desktop"]
-work-desktop = ["base", "containers", "desktop", "work"]
+server = ["base"]
+desktop = ["base", "desktop"]
+work-desktop = ["base", "desktop", "work"]
