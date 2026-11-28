@@ -1,6 +1,16 @@
 [bootstrap.directories."~/Gdrive"]
 state = "present"
 
+[bootstrap.services.oo7-daemon]
+scope = "user"
+enabled = true
+state = "running"
+
+[bootstrap.services.ssh-agent]
+scope = "user"
+enabled = true
+state = "running"
+
 [bootstrap.services.rclone]
 scope = "user"
 enabled = true
