@@ -15,9 +15,6 @@ recipients = [
 [bootstrap.services.mise-history]
 builtin = "history-watch"
 
-[bootstrap.repos]
-"{{ vars.REPOS_DIR }}/portfolio" = { url = "git@github.com:kuru-emre/portfolio" }
-
 [bootstrap.hooks.post-dotfiles]
 run = "mise run decrypt-age"
 
