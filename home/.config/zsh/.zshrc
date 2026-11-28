@@ -1,2 +1,5 @@
-source $ZFLASH_HOME/zflash.zsh
-zflash boot $ZDOTDIR/confs/zflash.zsh
+# source $ZFLASH_HOME/zflash.zsh
+# zflash boot $ZDOTDIR/confs/zflash.zsh
+
+
+eval "$(sheldon source)"
