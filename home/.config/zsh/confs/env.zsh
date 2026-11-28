@@ -5,9 +5,9 @@
 export ATUIN_CONFIG_DIR="$XDG_CONFIG_HOME/atuin"
 export ATUIN_HOME="$XDG_DATA_HOME/atuin"
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
+export MISE_AUTO_ENV=true
 
 # Languages & Package Managers
-export MISE_AUTO_ENV=true
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export GOPATH="$XDG_DATA_HOME/go"
