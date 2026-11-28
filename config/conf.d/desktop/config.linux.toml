@@ -1,5 +1,3 @@
-[tools]
-
 [bootstrap.user]
 login_shell = "zsh"
 
