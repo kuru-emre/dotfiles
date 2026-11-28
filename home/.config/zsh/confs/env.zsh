@@ -1,3 +1,9 @@
+
+# 4. De-clutter $HOME (XDG Overrides for CLI tools & languages)
+export LESSHISTFILE="$XDG_STATE_HOME/less/history"
+export MISE_AUTO_ENV=true
+
+
 # Atuin
 export ATUIN_CONFIG_DIR=$XDG_CONFIG_HOME/atuin
 export ATUIN_HOME=$XDG_DATA_HOME/atuin
