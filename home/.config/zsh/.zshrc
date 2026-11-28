@@ -1,4 +1,5 @@
 STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/config.toml
+
 ZFLASH_HOME="$XDG_DATA_HOME/zflash"
 ZFLASH_SPEC="$ZDOTDIR/confs/zflash.zsh"
 ZFLASH_COMPINIT=0
