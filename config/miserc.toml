@@ -1,4 +1,3 @@
-# ~/.dotfiles/.config/mise/miserc.toml
 auto_env = true  # Auto-activates unix, linux/macos, and linux-x64/arm64
 env_conf_d = true  # Makes conf.d/<name>.<env>.toml load only when <env> is active
 
