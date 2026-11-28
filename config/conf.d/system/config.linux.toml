@@ -3,6 +3,12 @@ scope = "system"
 enabled = true
 state = "running"
 
+[bootstrap.services.zsh-patina]
+scope = "user"
+enabled = true
+command = "zsh-patina start --no-daemon"
+state = "running"
+
 [bootstrap.packages]
 "pacman:paru" = "latest"
 "pacman:ouch" = "latest"
