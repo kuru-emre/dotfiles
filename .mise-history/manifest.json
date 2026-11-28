@@ -139,7 +139,7 @@
     "home/.config/gh/config.yml": 384,
     "home/.config/gh/hosts.yml": 384,
     "home/.config/rclone/rclone.conf": 384,
-    "home/.local/share": 448,
+    "home/.local/share": 488,
     "home/.ssh": 448
   }
 }
