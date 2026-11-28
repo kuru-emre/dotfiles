@@ -3,6 +3,9 @@ bun = "latest"
 node = "latest"
 flutter = "latest"
 
+[bootstrap.user]
+login_shell = "zsh"
+
 [bootstrap.packages]
 "pacman:niri" = "latest"
 "pacman:greetd" = "latest"
