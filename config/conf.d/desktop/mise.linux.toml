@@ -1,6 +1,7 @@
 [tools]
 bun = "latest"
 node = "latest"
+flutter = "latest"
 
 [bootstrap.packages]
 "pacman:niri" = "latest"
