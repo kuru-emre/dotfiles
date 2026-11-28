@@ -1,7 +1,5 @@
 # Mise
-export MISE_AUTO_ENV=true
 
-# Zflash
 
 # Fzf
 # Open in a popup if on tmux or Zellij, otherwise use --height mode
