@@ -8,6 +8,11 @@ export XDG_BIN_HOME="${XDG_BIN_HOME:-$HOME/.local/bin}"
 # 2. Relocate Zsh configuration files
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
+# 3. Core System Defaults
+export EDITOR="nvim"
+export VISUAL="$EDITOR"
+export PAGER="less"
+
 # Update PATH and defaults
 export PATH="$XDG_BIN_HOME:$PATH"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
