@@ -11,7 +11,7 @@
 # which runs right after the first prompt; earlier compdef calls are queued.
 
 # ── before the first prompt ──────────────────────────────────────────────
-zflash load $ZDOTDIR/confs/options.zsh            # your own files work like plugins
+zflash load $ZDOTDIR/confs/10-options.zsh            # your own files work like plugins
 zflash defer ohmyzsh/ohmyzsh
 
 # prompt: run `<tool> init zsh` once, at build time, instead of every start
