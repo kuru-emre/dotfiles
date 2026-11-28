@@ -30,6 +30,7 @@ state = "running"
 "pacman:atuin" = "latest"
 "pacman:git-delta" = "latest"
 "pacman:openssh" = "latest"
+"pacman:moor" = "latest"
 
 "aur:zsh-patina-bin" = "latest"
 "aur:lig-bin" = "latest"
