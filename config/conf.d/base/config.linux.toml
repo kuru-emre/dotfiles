@@ -4,8 +4,8 @@ enabled = true
 state = "running"
 
 [bootstrap.services.zsh-patina]
-scope = "user"
 enabled = true
+scope = "user"
 command = "zsh-patina start --no-daemon"
 state = "running"
 
