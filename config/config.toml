@@ -10,7 +10,7 @@ auto = true
 
 [history.encryption]
 recipients = [
-  "age19udr0n8rg5uy54lxfx4twlhvcpq9aj8nn2qmrmv6j6z8lpcxgveq80unsc",
+  "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINWPW7mMQXYqvkUxLS1WnYgWqL6sP9DDw4TqIRgW73mM kuru.emre@hotmail.com",
 ]
 
 [bootstrap.services.mise-history]
