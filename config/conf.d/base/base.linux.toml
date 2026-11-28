@@ -25,6 +25,39 @@ run = "mise run setup-oo7 && mise run setup-keepassxc"
 "aur:zsh-patina-bin" = "latest"
 "aur:lig-bin" = "latest"
 
+[bootstrap.services.oo7-daemon]
+scope = "user"
+enabled = true
+state = "running"
+
+[bootstrap.services.ssh-agent]
+scope = "user"
+enabled = true
+state = "running"
+
+[bootstrap.services."netbird@main"]
+scope = "system"
+enabled = true
+state = "running"
+
+[bootstrap.services.zsh-patina]
+scope = "user"
+enabled = true
+command = "zsh-patina start --no-daemon"
+state = "running"
+
+[bootstrap.services.rclone]
+scope = "user"
+enabled = true
+command = 'rclone mount gdrive: "%h/Gdrive" --vfs-cache-mode full'
+restart = "on-failure"
+
+[bootstrap.services.keepassxc]
+scope = "user"
+enabled = true
+command = '/bin/sh -c "systemd-creds --user --name="keepassxc-pw" decrypt \"%E/credstore.encrypted/keepassxc-pw\" - | keepassxc --pw-stdin \"%h/Gdrive/pswd.kdbx\""'
+restart = "always"
+
 [bootstrap.linux.firewall]
 backend = "nftables"
 default_incoming = "deny"
