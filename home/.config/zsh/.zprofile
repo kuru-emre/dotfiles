@@ -5,3 +5,9 @@ typeset -U path PATH
 eval "$(mise activate zsh --shims)"
 
 
+path=(
+  "$XDG_BIN_HOME"
+  "$CARGO_HOME/bin"
+  "$GOPATH/bin"
+  $path
+)
