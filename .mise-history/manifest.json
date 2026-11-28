@@ -26,6 +26,12 @@
       "variants": []
     },
     {
+      "path": "home/.config/fontconfig",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
       "path": "home/.config/gh",
       "autosave": true,
       "encrypt": false,
