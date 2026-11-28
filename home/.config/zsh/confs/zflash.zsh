@@ -23,5 +23,5 @@ zflash eval --defer 'zsh-patina activate'
 zflash defer $ZDOTDIR/confs/functions.zsh
 zflash defer $ZDOTDIR/confs/aliases.zsh
 
-# Make sure lig post hook is always dead last
+# Lig post hook is always dead last
 zflash eval --defer 'lig init zsh post'
