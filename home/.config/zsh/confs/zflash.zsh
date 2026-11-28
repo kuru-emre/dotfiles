@@ -1,3 +1,15 @@
+# zflash spec — the one ordered list of everything your shell loads.
+# Evaluated only by `zflash build`, never at shell start. `zflash help`.
+#
+#   zflash load  <repo|file> [path ...]   source before the first prompt
+#   zflash defer <repo|file> [path ...]   source after the first prompt
+#   zflash fpath <repo|dir>  [path ...]   completions only
+#   zflash eval [--defer] '<cmd>'         run at build time, inline the output
+#
+# <repo> is owner/repo, a git URL, or a local path (a directory, or one of your
+# own rc files). Completion dirs from every line are hoisted above compinit,
+# which runs right after the first prompt; earlier compdef calls are queued.
+
 # ── before the first prompt ──────────────────────────────────────────────
 zflash load $ZDOTDIR/confs/options.zsh
 
