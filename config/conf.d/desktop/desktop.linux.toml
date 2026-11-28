@@ -24,3 +24,9 @@
 "aur:dux-search-bin" = "latest"
 "aur:dux-greeter-bin" = "latest"
 "aur:gaze-bin" = "latest"
+
+[bootstrap.services.rclone]
+scope = "user"
+enabled = true
+command = 'rclone mount gdrive: "%h/Gdrive" --vfs-cache-mode full'
+restart = "on-failure"
