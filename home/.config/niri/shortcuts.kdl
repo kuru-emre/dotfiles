@@ -2,6 +2,7 @@ binds {
     Mod+E { spawn "code"; }
     Mod+B { spawn "brave"; }
     Mod+Slash { spawn "keepassxc"; }
+    Mod+Shift+F { maximize-window-to-edges; }
 }
 
 window-rule {
