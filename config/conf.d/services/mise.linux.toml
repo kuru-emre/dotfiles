@@ -31,6 +31,7 @@ restart = "always"
 
 [tasks."setup-oo7"]
 description = "Initialize and verify oo7 keyring credential"
+skip_if = ""
 sources = ["/dev/null"]
 outputs = ["{{ env.CRED_DIR }}/oo7.keyring-encryption-password"]
 run = [
