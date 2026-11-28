@@ -24,8 +24,8 @@
 "aur:lig-bin" = "latest"
 
 [bootstrap.services."netbird@main"]
-enabled = true
 scope = "system"
+enabled = true
 state = "running"
 
 [bootstrap.services.zsh-patina]
