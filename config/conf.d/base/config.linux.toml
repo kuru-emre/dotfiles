@@ -1,6 +1,5 @@
 [bootstrap.services."netbird@main"]
 scope = "system"
-enabled = true
 state = "running"
 
 [bootstrap.services.zsh-patina]
