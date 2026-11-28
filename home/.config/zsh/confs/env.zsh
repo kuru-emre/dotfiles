@@ -18,9 +18,6 @@ export FASTLANE_OPT_OUT_USAGE=1
 # Terraform
 export TF_CLI_CONFIG_FILE=$XDG_CONFIG_HOME/terraform/terraformrc
 
-# Less
-export LESSHISTFILE=$XDG_STATE_HOME/less/history
-
 # Gradle
 export GRADLE_USER_HOME=$XDG_CACHE_HOME/gradle
 
