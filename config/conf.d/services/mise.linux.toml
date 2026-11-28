@@ -35,7 +35,7 @@ skip_if = "test -s oo7.keyring-encryption-password"
 dir = "{{ env.CRED_DIR }}"
 run = [
   "systemd-ask-password -n 'oo7 Password' | systemd-creds --user --name=oo7.keyring-encryption-password encrypt - oo7.keyring-encryption-password",
-  "systemd-creds --user --name=oo7.keyring-encryption-password decrypt \"$CRED_DIR/oo7.keyring-encryption-password\" /dev/null",
+  "systemd-creds --user --name=oo7.keyring-encryption-password decrypt oo7.keyring-encryption-password /dev/null",
   "echo '✓ Initialized and verified oo7.keyring-encryption-password'",
 ]
 
