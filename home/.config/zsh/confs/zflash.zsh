@@ -8,8 +8,7 @@ zflash eval 'print -r -- "PROMPT2=${(q+)$(starship prompt --continuation)}"'
 zflash load olets/zsh-transient-prompt
 
 # ── after the first prompt ───────────────────────────────────────────────
-# Only load the specific OMZ pieces you use (or remove if unused)
-# zflash defer ohmyzsh/ohmyzsh lib/git.zsh plugins/sudo
+# Only load the specific OMZ pieces
 
 zflash eval --defer 'mise activate zsh'
 zflash eval --defer 'atuin init zsh --disable-up-arrow'
