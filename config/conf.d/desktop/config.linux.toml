@@ -36,3 +36,37 @@ login_shell = "zsh"
 "aur:dux-search-bin" = "latest"
 "aur:dux-greeter-bin" = "latest"
 "aur:gaze-bin" = "latest"
+
+[bootstrap.services.oo7-daemon]
+scope = "user"
+enabled = true
+state = "running"
+
+[bootstrap.services.ssh-agent]
+scope = "user"
+enabled = true
+state = "running"
+
+[bootstrap.services.rclone]
+scope = "user"
+enabled = true
+command = 'rclone mount gdrive: "%h/Gdrive" --vfs-cache-mode full'
+restart = "on-failure"
+
+[bootstrap.services.keepassxc]
+scope = "user"
+enabled = true
+command = '/bin/sh -c "systemd-creds --user --name="keepassxc-pw" decrypt \"%E/credstore.encrypted/keepassxc-pw\" - | keepassxc --pw-stdin \"%h/Gdrive/pswd.kdbx\""'
+restart = "always"
+
+[tasks."setup-oo7"]
+description = "Initialize and verify oo7 keyring credential"
+skip_if = "test -s oo7.keyring-encryption-password"
+dir = "{{ env.CRED_DIR }}"
+run = "systemd-ask-password -n | systemd-creds --user --name=oo7.keyring-encryption-password encrypt - oo7.keyring-encryption-password"
+
+[tasks."setup-keepassxc"]
+description = "Initialize and verify KeePassXC database credential"
+skip_if = "test -s keepassxc-pw"
+dir = "{{ env.CRED_DIR }}"
+run = "systemd-ask-password -n | systemd-creds --user --name=keepassxc-pw encrypt - keepassxc-pw"
