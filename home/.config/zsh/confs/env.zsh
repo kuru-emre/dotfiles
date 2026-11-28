@@ -6,6 +6,7 @@ export MISE_AUTO_ENV=true
 
 # Zflash
 export ZFLASH_HOME="$XDG_DATA_HOME/zflash"
+export ZFLASH_SPEC="$ZDOTDIR/confs/zflash.zsh"
 
 # Fzf
 # Open in a popup if on tmux or Zellij, otherwise use --height mode
