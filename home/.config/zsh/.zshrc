@@ -1,5 +1,5 @@
-ZFLASH_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/zflash/zflash"
-ZFLASH_SPEC="${XDG_CONFIG_HOME:-$HOME/.config}/zflash/plugins.zsh"
+ZFLASH_DIR="XDG_DATA_HOME/zflash/zflash"
+ZFLASH_SPEC="${XDG_CONFIG_HOME:-$HOME/.config}/"
 
 # Auto-clone zflash on first run if missing
 if [[ ! -f "$ZFLASH_DIR/zflash.zsh" ]]; then
