@@ -1,2 +1,8 @@
 [bootstrap.directories."~/Gdrive"]
 state = "present"
+
+[bootstrap.services.rclone]
+scope = "user"
+enabled = true
+command = 'rclone mount gdrive: "%h/Gdrive" --vfs-cache-mode full'
+restart = "on-failure"
