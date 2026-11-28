@@ -3,8 +3,8 @@ repos_dir = "~/Repos"
 
 [settings]
 trusted_config_paths = ["~/.config", "{{ vars.repos_dir }}"]
-experimental = true
 self_update = { auto = true }
+experimental = true
 
 [history.encryption]
 recipients = [
