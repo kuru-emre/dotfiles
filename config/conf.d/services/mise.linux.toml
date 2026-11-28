@@ -22,6 +22,12 @@ scope = "system"
 enabled = true
 state = "running"
 
+[bootstrap.services.zsh-patina]
+scope = "user"
+enabled = true
+command = "zsh-patina start --no-daemon"
+state = "running"
+
 [bootstrap.services.rclone]
 scope = "user"
 enabled = true
