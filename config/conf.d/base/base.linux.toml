@@ -46,12 +46,6 @@ enabled = true
 command = "zsh-patina start --no-daemon"
 state = "running"
 
-[bootstrap.services.rclone]
-scope = "user"
-enabled = true
-command = 'rclone mount gdrive: "%h/Gdrive" --vfs-cache-mode full'
-restart = "on-failure"
-
 [bootstrap.services.keepassxc]
 scope = "user"
 enabled = true
