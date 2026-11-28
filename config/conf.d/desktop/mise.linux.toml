@@ -40,3 +40,4 @@ state = "running"
 "aur:gaze-bin" = "latest"
 
 [tasks."systemd-creds"]
+run = ""
