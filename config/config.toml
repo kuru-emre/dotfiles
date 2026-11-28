@@ -29,6 +29,10 @@ dir = "{{mise_config_dir}}"
 skip_if = "test -s age"
 run = "age -d -o age.txt age"
 
+[tools]
+java = "lts"
+python = "latest"
+
 [dotfiles]
 "~/.config/atuin" = { mode = "track" }
 "~/.config/dankcal" = { mode = "track" }
