@@ -37,6 +37,6 @@ run = "mise run decrypt-age"
 
 [settings]
 trusted_config_paths = ["~/.config", "{{ vars.REPOS_DIR }}"]
-history = { sync_interval = "1h" }
+history = { sync_interval = "6h" }
 self_update = { auto = true }
 experimental = true
