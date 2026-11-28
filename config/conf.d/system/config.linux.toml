@@ -1,3 +1,16 @@
+[tools]
+java = "lts"
+python = "latest"
+
+[bootstrap.user]
+login_shell = "zsh"
+
+[bootstrap.services.zsh-patina]
+scope = "user"
+enabled = true
+command = "zsh-patina start --no-daemon"
+state = "running"
+
 [bootstrap.packages]
 "pacman:paru" = "latest"
 "pacman:ouch" = "latest"
@@ -19,20 +32,8 @@
 "pacman:openssh" = "latest"
 "pacman:moor" = "latest"
 
-"aur:netbird-bin" = "latest"
 "aur:zsh-patina-bin" = "latest"
 "aur:lig-bin" = "latest"
-
-[bootstrap.services."netbird@main"]
-scope = "system"
-enabled = true
-state = "running"
-
-[bootstrap.services.zsh-patina]
-scope = "user"
-enabled = true
-state = "running"
-command = "zsh-patina start --no-daemon"
 
 [bootstrap.linux.firewall]
 backend = "nftables"
