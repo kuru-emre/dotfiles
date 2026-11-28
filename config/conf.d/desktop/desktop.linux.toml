@@ -25,6 +25,20 @@
 "aur:dux-greeter-bin" = "latest"
 "aur:gaze-bin" = "latest"
 
+[bootstrap.hooks.pre-packages]
+run = "mise run setup-oo7 && mise run setup-keepassxc"
+
+[bootstrap.services.oo7-daemon]
+scope = "user"
+enabled = true
+state = "running"
+
+[bootstrap.services.keepassxc]
+scope = "user"
+enabled = true
+command = '/bin/sh -c "systemd-creds --user --name=\"keepassxc-pw\" decrypt \"%E/credstore.encrypted/keepassxc-pw\" - | keepassxc --pw-stdin \"%h/Gdrive/pswd.kdbx\""'
+restart = "always"
+
 [bootstrap.services.rclone]
 scope = "user"
 enabled = true
