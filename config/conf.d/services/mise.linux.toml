@@ -17,6 +17,11 @@ scope = "user"
 enabled = true
 state = "running"
 
+[bootstrap.services.netbird]
+scope = "user"
+enabled = true
+state = "running"
+
 [bootstrap.services.rclone]
 scope = "user"
 enabled = true
