@@ -1,9 +1,0 @@
-[tools]
-bun = "latest"
-node = "latest"
-flutter = "latest"
-python = "latest"
-java = "lts"
-
-[bootstrap.repos]
-"{{ vars.REPOS_DIR }}/portfolio" = { url = "git@github.com:kuru-emre/portfolio" }
