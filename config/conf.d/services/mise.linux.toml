@@ -38,7 +38,7 @@ run = [
   "echo '✓ Initialized and verified oo7.keyring-encryption-password'",
 ]
 
-[tasks."setup-creds:keepassxc"]
+[tasks."setup-keepassxc"]
 description = "Initialize and verify KeePassXC database credential"
 outputs = ["{{ env.CRED_DIR }}/keepassxc-pw"]
 run = [
