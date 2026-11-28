@@ -4,6 +4,9 @@ export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 # Mise
 export MISE_AUTO_ENV=true
 
+# Zflash
+export ZFLASH_HOME="$XDG_DATA_HOME/zflash"
+
 # Fzf
 # Open in a popup if on tmux or Zellij, otherwise use --height mode
 export FZF_DEFAULT_OPTS='--popup 70%'
