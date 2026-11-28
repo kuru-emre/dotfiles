@@ -21,6 +21,7 @@ zflash load olets/zsh-transient-prompt
 
 # ── after the first prompt ───────────────────────────────────────────────
 # Only load the specific OMZ pieces
+zflash defer ohmyzsh/ohmyzsh lib/history.zsh lib/key-bindings.zsh
 
 zflash eval --defer 'mise activate zsh'
 zflash eval --defer 'atuin init zsh --disable-up-arrow'
