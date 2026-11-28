@@ -17,7 +17,7 @@ scope = "user"
 enabled = true
 state = "running"
 
-[bootstrap.services.netbird]
+[bootstrap.services."netbird@main"]
 scope = "system"
 enabled = true
 state = "running"
