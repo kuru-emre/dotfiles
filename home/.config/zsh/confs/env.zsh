@@ -3,7 +3,7 @@ export ATUIN_CONFIG_DIR=$XDG_CONFIG_HOME/atuin
 export ATUIN_HOME=$XDG_DATA_HOME/atuin
 
 # Starship
-export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/config.toml
+STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/config.toml
 
 # DotNET/NuGet
 export NUGET_PACKAGES=$XDG_CACHE_HOME/nuget
