@@ -45,6 +45,4 @@ skip_if = "test -s keepassxc-pw"
 dir = "{{ env.CRED_DIR }}"
 run = [
   "systemd-ask-password -n | systemd-creds --user --name=keepassxc-pw encrypt - keepassxc-pw",
-  "systemd-creds --user --name=keepassxc-pw decrypt keepassxc-pw /dev/null",
-  "echo '✓ Initialized and verified keepassxc-pw'",
 ]
