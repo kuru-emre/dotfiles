@@ -46,7 +46,6 @@ state = "running"
 description = "Initialize and verify oo7 keyring credential"
 outputs = ["{{ env.CRED_DIR }}/oo7.keyring-encryption-password"]
 run = [
-  "install -dm 700 \"$CRED_DIR\"",
   "systemd-ask-password -n 'oo7 Keyring Password' | systemd-creds --user --name=oo7.keyring-encryption-password encrypt - \"$CRED_DIR/oo7.keyring-encryption-password\"",
   "chmod 600 \"$CRED_DIR/oo7.keyring-encryption-password\"",
   "systemd-creds --user --name=oo7.keyring-encryption-password decrypt \"$CRED_DIR/oo7.keyring-encryption-password\" /dev/null",
@@ -57,7 +56,6 @@ run = [
 description = "Initialize and verify KeePassXC database credential"
 outputs = ["{{ env.CRED_DIR }}/keepassxc-pw"]
 run = [
-  "install -dm 700 \"$CRED_DIR\"",
   "systemd-ask-password -n 'KeePassXC Database Password:' | systemd-creds --user --name=keepassxc-pw encrypt - \"$CRED_DIR/keepassxc-pw\"",
   "chmod 600 \"$CRED_DIR/keepassxc-pw\"",
   "systemd-creds --user --name=keepassxc-pw decrypt \"$CRED_DIR/keepassxc-pw\" /dev/null",
