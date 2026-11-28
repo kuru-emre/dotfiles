@@ -29,8 +29,8 @@ zflash defer zsh-users/zsh-autosuggestions
 
 # your aliases and functions last, so they win over plugin aliases
 # completions only
-zflash defer $ZDOTDIR/confs/functions.zsh
-zflash defer $ZDOTDIR/confs/aliases.zsh
+zflash defer $ZDOTDIR/confs/20-functions.zsh
+zflash defer $ZDOTDIR/confs/30-aliases.zsh
 
 # Make sure lig post hook is last
 zflash eval --defer 'lig init zsh post'
