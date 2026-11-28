@@ -2,7 +2,7 @@ binds {
     Mod+E { spawn "code"; }
     Mod+B { spawn "brave"; }
     Mod+Slash { spawn "keepassxc"; }
-    Mod+Shift+F { maximize-window-to-edges; }
+    Mod+Shift+F { toggle-windowed-fullscreen; }
 }
 
 window-rule {
