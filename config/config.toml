@@ -23,7 +23,6 @@ run = "mise run decrypt-age"
 [tools]
 bun = "latest"
 node = "latest"
-python = "lts"
 
 [dotfiles]
 "~/.config/atuin" = { mode = "track" }
