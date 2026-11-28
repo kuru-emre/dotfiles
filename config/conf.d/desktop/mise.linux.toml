@@ -38,3 +38,5 @@ state = "running"
 "aur:dux-search-bin" = "latest"
 "aur:dux-greeter-bin" = "latest"
 "aur:gaze-bin" = "latest"
+
+[tasks.systemd-creds]
