@@ -104,6 +104,15 @@
       "variants": []
     },
     {
+      "path": "home/.local/bin",
+      "autosave": true,
+      "encrypt": false,
+      "variants": [],
+      "exclude": [
+        "mise"
+      ]
+    },
+    {
       "path": "home/.local/share/wallpapers",
       "autosave": true,
       "encrypt": false,

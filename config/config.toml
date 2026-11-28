@@ -46,6 +46,7 @@ run = "age -d -o age.txt age"
 "~/.config/starship" = { mode = "track" }
 "~/.config/zsh" = { mode = "track", exclude = ["*.zwc"] }
 "~/.config/zsh-patina" = { mode = "track" }
+"~/.local/bin" = { mode = "track", exclude = ["mise"] }
 "~/.local/share/wallpapers" = { mode = "track" }
 "~/.ssh" = { mode = "track", exclude = ["agent", "known_hosts"] }
 "~/.zshenv" = { mode = "track" }
