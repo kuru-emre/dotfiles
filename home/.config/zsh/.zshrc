@@ -2,7 +2,6 @@ ZFLASH_HOME="$XDG_DATA_HOME/zflash"
 ZFLASH_SPEC="$ZDOTDIR/confs/zflash.zsh"
 ZFLASH_COMPINIT=0
 
-
 # Auto-clone zflash on first run if missing
 if [[ ! -f "$ZFLASH_DIR/zflash.zsh" ]]; then
   mkdir -p "${ZFLASH_DIR:h}"
