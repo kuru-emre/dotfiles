@@ -1,4 +1,5 @@
 [bootstrap.services."netbird@main"]
+enabled = true
 scope = "system"
 state = "running"
 
