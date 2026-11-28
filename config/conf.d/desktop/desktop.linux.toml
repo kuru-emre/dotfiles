@@ -37,6 +37,10 @@ scope = "system"
 enabled = true
 state = "running"
 
+[bootstrap.services.dms]
+scope = "user"
+enabled = true
+
 [bootstrap.services.oo7-daemon]
 scope = "user"
 enabled = true
