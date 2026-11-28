@@ -6,13 +6,6 @@ trusted_config_paths = ["~/.config", "{{ vars.repos_dir }}"]
 self_update = { auto = true }
 experimental = true
 
-[tools]
-java = "lts"
-bun = "latest"
-node = "latest"
-python = "latest"
-flutter = "latest"
-
 [history.encryption]
 recipients = [
   "age19udr0n8rg5uy54lxfx4twlhvcpq9aj8nn2qmrmv6j6z8lpcxgveq80unsc",
