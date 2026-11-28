@@ -14,4 +14,4 @@ command = '/bin/sh -c "systemd-creds --user --name="keepassxc-pw" decrypt \"%E/c
 restart = "always"
 
 [bootstrap.hooks.pre-packages]
-run = "{{ config_root }}/creds"
+run = "mise "
