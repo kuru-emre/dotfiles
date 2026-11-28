@@ -5,6 +5,7 @@ CRED_DIR = "{{ xdg_config_home }}/credstore.encrypted"
 bun = "latest"
 node = "latest"
 
+[bootstrap.directories."~/Gdrive"]
 state = "present"
 
 [bootstrap.services.rclone]
