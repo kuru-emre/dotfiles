@@ -1,6 +1,7 @@
 # Prevent duplicate entries in PATH
 typeset -U path PATH
 
+# Mise shims (puts mise-managed tools on PATH for login/GUI sessions)
 if command -v mise &> /dev/null; then
   eval "$(mise activate zsh --shims)"
 fi
