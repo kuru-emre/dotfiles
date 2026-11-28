@@ -19,8 +19,7 @@ zflash eval --defer 'zoxide init zsh --cmd cd'
 zflash defer zsh-users/zsh-autosuggestions
 zflash eval --defer 'zsh-patina activate'
 
-# Your aliases, functions, and keybinds last so they override plugin defaults
-zflash defer $ZDOTDIR/confs/keybinds.zsh
+# Aliases, functions last so they override plugin defaults
 zflash defer $ZDOTDIR/confs/functions.zsh
 zflash defer $ZDOTDIR/confs/aliases.zsh
 
