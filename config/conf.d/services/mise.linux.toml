@@ -3,9 +3,3 @@ description = "Initialize and verify oo7 keyring credential"
 skip_if = "test -s oo7.keyring-encryption-password"
 dir = "{{ env.CRED_DIR }}"
 run = "systemd-ask-password -n | systemd-creds --user --name=oo7.keyring-encryption-password encrypt - oo7.keyring-encryption-password"
-
-[tasks."setup-keepassxc"]
-description = "Initialize and verify KeePassXC database credential"
-skip_if = "test -s keepassxc-pw"
-dir = "{{ env.CRED_DIR }}"
-run = "systemd-ask-password -n | systemd-creds --user --name=keepassxc-pw encrypt - keepassxc-pw"
