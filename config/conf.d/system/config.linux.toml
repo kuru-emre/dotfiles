@@ -5,6 +5,11 @@ python = "latest"
 [bootstrap.user]
 login_shell = "zsh"
 
+[bootstrap.services."netbird@main"]
+scope = "system"
+enabled = true
+state = "running"
+
 [bootstrap.packages]
 "pacman:paru" = "latest"
 "pacman:ouch" = "latest"
