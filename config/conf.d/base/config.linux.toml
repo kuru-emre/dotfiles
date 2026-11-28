@@ -29,8 +29,8 @@ scope = "system"
 state = "running"
 
 [bootstrap.services.zsh-patina]
-enabled = true
 scope = "user"
+enabled = true
 state = "running"
 command = "zsh-patina start --no-daemon"
 
