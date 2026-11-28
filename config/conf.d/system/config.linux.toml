@@ -1,7 +1,3 @@
-[tools]
-java = "lts"
-python = "latest"
-
 [bootstrap.user]
 login_shell = "zsh"
 
