@@ -44,7 +44,7 @@ description = "Initialize and verify KeePassXC database credential"
 skip_if = "test -s keepassxc-pw"
 dir = "{{ env.CRED_DIR }}"
 run = [
-  "systemd-ask-password -n 'KeePassXC Password:' | systemd-creds --user --name=keepassxc-pw encrypt - \"$CRED_DIR/keepassxc-pw\"",
+  "systemd-ask-password -n 'KeePassXC Password:' | systemd-creds --user --name=keepassxc-pw encrypt - keepassxc-pw",
   "systemd-creds --user --name=keepassxc-pw decrypt keepassxc-pw /dev/null",
   "echo '✓ Initialized and verified keepassxc-pw'",
 ]
