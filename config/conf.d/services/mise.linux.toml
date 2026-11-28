@@ -1,6 +1,3 @@
-[bootstrap.directories."~/Gdrive"]
-state = "present"
-
 [bootstrap.services.oo7-daemon]
 scope = "user"
 enabled = true
