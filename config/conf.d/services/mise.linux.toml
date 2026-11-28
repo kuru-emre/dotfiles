@@ -1,6 +1,3 @@
-[bootstrap.hooks.pre-packages]
-run = "mise run setup-oo7 && mise run setup-keepassxc"
-
 [bootstrap.directories."~/Gdrive"]
 state = "present"
 
