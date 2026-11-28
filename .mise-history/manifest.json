@@ -98,6 +98,12 @@
       "variants": []
     },
     {
+      "path": "home/.local/share/wallpapers",
+      "autosave": true,
+      "encrypt": false,
+      "variants": []
+    },
+    {
       "path": "home/.ssh",
       "autosave": true,
       "encrypt": false,
@@ -124,6 +130,7 @@
     "home/.config/gh/config.yml": 384,
     "home/.config/gh/hosts.yml": 384,
     "home/.config/rclone/rclone.conf": 384,
+    "home/.local/share": 448,
     "home/.ssh": 448
   }
 }
