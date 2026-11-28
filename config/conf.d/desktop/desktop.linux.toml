@@ -1,3 +1,6 @@
+[bootstrap.hooks.pre-packages]
+run = "mise run setup-oo7 && mise run setup-keepassxc"
+
 [bootstrap.packages]
 "pacman:niri" = "latest"
 "pacman:greetd" = "latest"
@@ -24,9 +27,6 @@
 "aur:dux-search-bin" = "latest"
 "aur:dux-greeter-bin" = "latest"
 "aur:gaze-bin" = "latest"
-
-[bootstrap.hooks.pre-packages]
-run = "mise run setup-oo7 && mise run setup-keepassxc"
 
 [bootstrap.services.oo7-daemon]
 scope = "user"
