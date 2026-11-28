@@ -23,7 +23,6 @@ flutter = "latest"
 "pacman:ttf-noto-nerd" = "latest"
 
 "aur:visual-studio-code-bin" = "latest"
-"aur:netbird-bin" = "latest"
 "aur:brave-bin" = "latest"
 "aur:dux-calendar-bin" = "latest"
 "aur:dux-files-bin" = "latest"
