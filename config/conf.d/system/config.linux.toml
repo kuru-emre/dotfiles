@@ -26,6 +26,7 @@ login_shell = "zsh"
 "pacman:openssh" = "latest"
 "pacman:moor" = "latest"
 
+"aur:netbird-bin" = "latest"
 "aur:zsh-patina-bin" = "latest"
 "aur:lig-bin" = "latest"
 
