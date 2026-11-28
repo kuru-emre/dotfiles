@@ -10,6 +10,6 @@ export XDG_BIN_HOME="${XDG_BIN_HOME:-$HOME/.local/bin}"
 
 # Update PATH and defaults
 export PATH="$XDG_BIN_HOME:$PATH"
-export MISE_AUTO_ENV=true
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export MISE_AUTO_ENV=true
 export EDITOR="nvim"
