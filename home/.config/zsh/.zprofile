@@ -6,6 +6,7 @@ if command -v mise &> /dev/null; then
   eval "$(mise activate zsh --shims)"
 fi
 
+# Prepend personal and language binary directories
 path=(
   "$XDG_BIN_HOME"
   "$PUB_CACHE/bin"
