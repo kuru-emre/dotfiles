@@ -31,6 +31,7 @@ restart = "always"
 
 [tasks."setup-oo7"]
 description = "Initialize and verify oo7 keyring credential"
+sources = ["/dev/null"]
 outputs = ["{{ env.CRED_DIR }}/oo7.keyring-encryption-password"]
 run = [
   "systemd-ask-password -n 'oo7 Keyring Password' | systemd-creds --user --name=oo7.keyring-encryption-password encrypt - \"$CRED_DIR/oo7.keyring-encryption-password\"",
@@ -40,6 +41,7 @@ run = [
 
 [tasks."setup-keepassxc"]
 description = "Initialize and verify KeePassXC database credential"
+sources = ["/dev/null"]
 outputs = ["{{ env.CRED_DIR }}/keepassxc-pw"]
 run = [
   "systemd-ask-password -n 'KeePassXC Database Password:' | systemd-creds --user --name=keepassxc-pw encrypt - \"$CRED_DIR/keepassxc-pw\"",
