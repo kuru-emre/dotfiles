@@ -10,9 +10,3 @@ fi
 # Source zflash and build/load your spec
 source "$ZFLASH_DIR/zflash.zsh"
 zflash boot "$ZFLASH_SPEC"
-
-
-
-
-source $ZFLASH_HOME/zflash.zsh
-zflash boot $ZDOTDIR/confs/zflash.zsh
