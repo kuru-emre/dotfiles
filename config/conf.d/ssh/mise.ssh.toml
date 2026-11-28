@@ -1,0 +1,8 @@
+[bootstrap.packages]
+"aur:netbird-bin" = "latest"
+
+[[bootstrap.linux.firewall.rules]]
+name = "ssh"
+port = 22
+protocol = "tcp"
+interface = "wt0"
