@@ -1,3 +1,6 @@
+[env]
+CRED_DIR = "{{ xdg_config_home }}/credstore.encrypted"
+
 [bootstrap.directories."~/Gdrive"]
 state = "present"
 
