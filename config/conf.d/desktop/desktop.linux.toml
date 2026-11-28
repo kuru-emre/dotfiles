@@ -28,6 +28,11 @@ run = "mise run setup-oo7 && mise run setup-keepassxc"
 "aur:dux-greeter-bin" = "latest"
 "aur:gaze-bin" = "latest"
 
+[bootstrap.services.gazed]
+scope = "system"
+enabled = true
+state = "running"
+
 [bootstrap.services.oo7-daemon]
 scope = "user"
 enabled = true
