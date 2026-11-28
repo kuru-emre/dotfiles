@@ -1,7 +1,4 @@
 [tools]
-bun = "latest"
-node = "latest"
-flutter = "latest"
 
 [bootstrap.user]
 login_shell = "zsh"
