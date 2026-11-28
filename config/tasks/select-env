@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+#MISE description="Prompt for machine environment set on first run and re-apply bootstrap"
+set -euo pipefail
+
+LOCAL_RC="${MISE_CONFIG_ROOT}/miserc.local.toml"
+
+# Skip if miserc.local.toml already exists or an env was already passed via -E / MISE_ENV
+if [[ -f "$LOCAL_RC" || -n "${MISE_ENV:-}" ]]; then
+  exit 0
+fi
+
+echo "No miserc.local.toml found. Select machine profile (from [env_sets] in miserc.toml):"
+select profile in "desktop" "work-desktop" "server" "custom"; do
+  case "$profile" in
+    custom)
+      read -rp "Enter comma-separated environments/sets: " SELECTED_ENV
+      break
+      ;;
+    "")
+      echo "Invalid choice, try again."
+      ;;
+    *)
+      SELECTED_ENV="$profile"
+      break
+      ;;
+  esac
+done
+
+echo "Saving '$SELECTED_ENV' to $LOCAL_RC and applying profile..."
+mise bootstrap -E "$SELECTED_ENV" --save-env
