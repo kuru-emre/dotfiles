@@ -1,6 +1,3 @@
-[bootstrap.directories."~/Gdrive"]
-state = "present"
-
 [bootstrap.packages]
 "pacman:niri" = "latest"
 "pacman:greetd" = "latest"
