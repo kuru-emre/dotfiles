@@ -5,21 +5,6 @@ CRED_DIR = "{{ xdg_config_home }}/credstore.encrypted"
 bun = "latest"
 node = "latest"
 
-[bootstrap.directories."~/Gdrive"]
-state = "present"
-
-[bootstrap.services.rclone]
-scope = "user"
-enabled = true
-command = 'rclone mount gdrive: "%h/Gdrive" --vfs-cache-mode full'
-restart = "on-failure"
-
-[bootstrap.services.keepassxc]
-scope = "user"
-enabled = true
-command = '/bin/sh -c "systemd-creds --user --name="keepassxc-pw" decrypt \"%E/credstore.encrypted/keepassxc-pw\" - | keepassxc --pw-stdin \"%h/Gdrive/pswd.kdbx\""'
-restart = "always"
-
 [bootstrap.services.oo7-daemon]
 scope = "user"
 enabled = true
