@@ -6,8 +6,8 @@ state = "running"
 [bootstrap.services.zsh-patina]
 enabled = true
 scope = "user"
-command = "zsh-patina start --no-daemon"
 state = "running"
+command = "zsh-patina start --no-daemon"
 
 [bootstrap.packages]
 "pacman:paru" = "latest"
