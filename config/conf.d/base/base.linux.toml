@@ -20,3 +20,14 @@
 "pacman:moor" = "latest"
 "aur:zsh-patina-bin" = "latest"
 "aur:lig-bin" = "latest"
+
+[bootstrap.linux.firewall]
+backend = "nftables"
+default_incoming = "deny"
+default_outgoing = "allow"
+
+[[bootstrap.linux.firewall.rules]]
+name = "ssh"
+port = 22
+protocol = "tcp"
+interface = "wt0"
