@@ -128,7 +128,7 @@
   ],
   "exclude": [],
   "recipients": [
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIItvNwSKWUEMOpWH9djUG0A1/pMelKJflG0FT58J6Ltb mise"
+    "age19udr0n8rg5uy54lxfx4twlhvcpq9aj8nn2qmrmv6j6z8lpcxgveq80unsc"
   ],
   "permissions": {
     "home/.config/atuin/config.toml": 384,

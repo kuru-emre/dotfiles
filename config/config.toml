@@ -10,7 +10,7 @@ auto = true
 
 [history.encryption]
 recipients = [
-  "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIItvNwSKWUEMOpWH9djUG0A1/pMelKJflG0FT58J6Ltb mise",
+  "age19udr0n8rg5uy54lxfx4twlhvcpq9aj8nn2qmrmv6j6z8lpcxgveq80unsc",
 ]
 
 [bootstrap.services.mise-history]
@@ -21,6 +21,13 @@ builtin = "history-watch"
 
 [bootstrap.hooks.post-dotfiles]
 run = "mise run decrypt-age"
+
+[tasks.decrypt-age]
+quiet = true
+description = "Decrypt age key file"
+dir = "{{mise_config_dir}}"
+skip_if = "test -s age"
+run = "age -d -o age.txt age"
 
 [dotfiles]
 "~/.config/atuin" = { mode = "track" }
