@@ -1,6 +1,3 @@
-[bootstrap.user]
-login_shell = "zsh"
-
 [bootstrap.services."netbird@main"]
 scope = "system"
 enabled = true
