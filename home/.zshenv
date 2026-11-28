@@ -11,7 +11,7 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 # 3. Core System Defaults
 export EDITOR="nvim"
 export VISUAL="$EDITOR"
-export PAGER="less"
+export PAGER="moor"
 
 # 4. De-clutter $HOME (XDG Overrides for CLI tools & languages)
 export LESSHISTFILE="$XDG_STATE_HOME/less/history"
