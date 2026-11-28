@@ -1,0 +1,7 @@
+
+[tasks.decrypt-age]
+quiet = true
+description = "Decrypt age key file"
+dir = "{{mise_config_dir}}"
+skip_if = "test -s age"
+run = "age -d -o age.txt age"
